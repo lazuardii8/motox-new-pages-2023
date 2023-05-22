@@ -14,18 +14,23 @@ const Section1 = (props) => {
         <img src="./../images/Group 706118.png" className="images__head-text-one" alt="" />
 
         <div className="wrapper__text-heading sec1">
-          <h2 className="koulen normal font__size--60 text__60-1024 text__60-md text__60-sm wrapper__wrap-text darkblue mb-0 mb-md-2"><span>WELCOME TO MOTO-X</span></h2>
-          <div className="mb-md-3">
-            <RidesIcon width={"100%"} />
+          <h2 className="position-relative z-2 koulen normal font__size--60 text__60-1024 text__60-md text__60-sm wrapper__wrap-text darkblue mb-0 mb-md-2"><span>WELCOME TO MOTO-X</span></h2>
+          <div className="mb-md-3 position-relative">
+            <div className="d-md-none images__line-text-blur">
+              <RidesIcon width={"100%"} />
+            </div>
+            <div className="position-relative z-2">
+              <RidesIcon width={"100%"} />
+            </div>
           </div>
 
-          <div className="btn-sosmed d-flex align-items-center justify-content-end">
+          <div className="btn-sosmed d-flex align-items-center justify-content-end position-relative z-2">
             <img src="./../images/Vector (2).png" alt="" />
             <img src="./../images/Vector (2).png" alt="" />
-            <a href="#!" className="btn__clip">
+            <a href="https://discord.gg/AhJz97vxsw" target="_blank" className="btn__clip">
               <DiscordIcon />
             </a>
-            <a href="#!" className="btn__clip long koulen normal font__size--55 text__50-1024 text__50-md text__50-sm text__50-xxs text-uppercase color__white ml-2 ml-lg-3">join BETA</a>
+            <a href="#!" className="btn__clip long koulen normal font__size--55 text__50-1024 text__50-md text__50-sm text__50-xxs text-uppercase color__white ml-2 ml-lg-3"><span>buy now</span></a>
             <img src="./../images/Vector (2).png" className="right" alt="" />
             <img src="./../images/Vector (2).png" className="right" alt="" />
           </div>
@@ -33,8 +38,8 @@ const Section1 = (props) => {
 
         <div className="wrapper__sosmed align-self-end ml-auto d-flex align-items-center">
           <img src="./../images/sos (2).png" alt="" />
-          <img src="./../images/sos (1).png" className="mx-3" alt="" />
-          <img src="./../images/sos (3).png" alt="" />
+          {/* <img src="./../images/sos (1).png" className="mx-3" alt="" />
+          <img src="./../images/sos (3).png" alt="" /> */}
         </div>
 
       </div>

@@ -20,6 +20,12 @@
   }
 }
 
+.d-xs-none {
+  @media screen and(max-width: $br-xs) {
+    display: none;
+  }
+}
+
 .wrapper {
   &__height-res {
     &-sec4 {
@@ -633,6 +639,12 @@
       bottom: 0%;
     }
 
+    @media screen and(max-width: $br-xs) {
+      @media screen and(min-height: 700px) {
+        width: 18rem;
+      }
+    }
+
     &.four {
       width: 89vh;
 
@@ -642,6 +654,12 @@
         transform: initial;
         top: initial;
         bottom: 0%;
+      }
+
+      @media screen and(max-width: $br-xs) {
+        @media screen and(min-height: 700px) {
+          width: 18rem;
+        }
       }
     }
 
@@ -658,6 +676,14 @@
       @media screen and(max-width: $br-sm) {
         width: 44vh;
       }
+
+      @media screen and(max-width: $br-xs) {
+        @media screen and(min-height: 700px) {
+          width: 18rem;
+          bottom: 25%;
+          left: -11%;
+        }
+      }
     }
   }
   &__line {
@@ -669,6 +695,21 @@
       bottom: 0;
       z-index: 1;
       filter: blur(22px);
+      @media screen and(max-width: $br-xs) {
+        width: 100%;
+        height: 66rem;
+        left: 1rem;
+        bottom: -13rem;
+        transform: rotate(21deg);
+      }
+      @media screen and(max-width: $br-xx) {
+        @media screen and(min-height:700px) {
+          height: 62rem;
+          left: 1rem;
+          bottom: -9rem;
+          transform: rotate(21deg);
+        }
+      }
     }
     &-blue {
       position: absolute;
@@ -677,6 +718,10 @@
       left: 0;
       bottom: 0;
       filter: blur(22px);
+
+      @media screen and(max-width: $br-xs) {
+        height: 60%;
+      }
     }
 
     &-text-blur {
@@ -685,6 +730,13 @@
       right: 0;
       bottom: 11vh;
       filter: blur(22px);
+      @media screen and(max-width: $br-sm) {
+        left: 50%;
+        transform: translateX(-50%);
+        right: initial;
+        width: 100%;
+        top: 14%;
+      }
     }
   }
   &__head-text-one {
@@ -817,7 +869,7 @@
         height: auto;
         bottom: 1rem;
         @media screen and(max-height: 650px) {
-          width: 64vw;
+          width: 42vw;
         }
         @media screen and(min-height: 700px) {
           bottom: 1rem;
@@ -833,6 +885,7 @@
       @media screen and(max-width: $br-xx) {
         @media screen and(min-height: 700px) {
           bottom: 4rem;
+          width: 74vw;
         }
       }
     }
@@ -860,7 +913,7 @@
 
         @media screen and(max-height: 650px) {
           bottom: 1rem;
-          width: 62vw;
+          width: 40vw;
         }
         @media screen and(max-height: 500px) {
           bottom: 1rem;
@@ -869,10 +922,13 @@
         @media screen and(min-height: 700px) {
           bottom: 2rem;
         }
+        @media screen and(min-height: 800px) {
+          width: 54vh;
+        }
       }
       @media screen and(max-width: $br-xs) {
         @media screen and(min-height: 700px) {
-          width: 87vw;
+          width: 79vw;
         }
       }
     }
@@ -900,8 +956,13 @@
         width: 72vw;
         height: auto;
         bottom: 2rem;
+
+        @media screen and(max-height: 670px) {
+          width: 16rem;
+        }
         @media screen and(min-height: 700px) {
           bottom: 5rem;
+          width: 88vw;
         }
       }
     }
@@ -1271,6 +1332,10 @@
           height: 100%;
         }
       }
+
+      @media screen and(max-width: $br-xs) {
+        width: 191%;
+      }
     }
   }
 }
@@ -1303,15 +1368,29 @@
         height: 60px;
       }
 
+      @media screen and(max-width: $br-sm) {
+        span {
+          min-width: 100px;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+
       @media screen and(max-width: $br-xxs) {
         padding: 0px 1.5rem;
       }
     }
     &.more {
-      padding: 0 2.5rem;
+      padding: 0 2rem;
       clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
       @media screen and(max-width: 1024px) {
         padding: 0 1.5rem;
+
+        span {
+          display: inline-block;
+          width: 136px;
+          text-align: center;
+        }
       }
 
       @media screen and(max-width: $br-md) {

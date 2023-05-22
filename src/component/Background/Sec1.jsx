@@ -26,13 +26,13 @@ const Sec1 = (props) => {
                 </Fragment> : ""
             }
 
-            <div className="images__line-1">
+            <div className="images__line-1 d-xs-none">
                 <TopLineIcon />
             </div>
-            <div className="images__line-2">
+            <div className="images__line-2 d-xs-none">
                 <BottomLineIcon />
             </div>
-            <img src="./../images/Mask group.png" className="images__bg-1" alt="" />
+            <img src="./../images/Mask group.png" className="images__bg-1 d-xs-none" alt="" />
             <div className="images__line-3">
                 <ROundWrapIcon />
             </div>

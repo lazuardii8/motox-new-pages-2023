@@ -19,7 +19,7 @@ const Section8 = (props) => {
                                     <div className="wrap">
                                         <input type="text" className='zen font__size--18 text__18-1024 color__white position-relative z-2' placeholder='Insert your email' />
 
-                                        <div className="btn__clip register koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white pointer d-none d-md-block">
+                                        <div className="btn__clip register koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white pointer d-none d-md-flex">
                                             <span className='z-2'>Submit</span>
                                         </div>
                                     </div>

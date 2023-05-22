@@ -23,7 +23,7 @@ const section4 = (props) => {
                             <div className="wrapper__btn-sosmed d-flex align-items-center justify-content-center mb-4">
                                 <img src="./../images/Vector (2).png" alt="" />
                                 <img src="./../images/Vector (2).png" alt="" />
-                                <a href="#!" className="btn__clip more koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white">sEE MORE</a>
+                                <a href="#!" className="btn__clip more koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white"><span>coming soon</span></a>
                                 <img src="./../images/Vector (2).png" className="right" alt="" />
                                 <img src="./../images/Vector (2).png" className="right" alt="" />
                             </div>
@@ -84,10 +84,10 @@ const section4 = (props) => {
                 <div className='wrapper__text-heading sec4 d-none d-md-block'>
                     <h2 className='normal font__size--20 text__20-1024 lh__6 mb-0 opacity__7 mb-4'>Bibendum velit sollicitudin facilisi nisl praesent orci faucibus aliquam. Aenean vehicula porttitor quam sit enim id viverra. Erat consectetur turpis et aliquet.</h2>
 
-                    <div className="wrapper__btn-sosmed d-flex align-items-center">
+                    <div className="wrapper__btn-sosmed d-flex justify-content-md-start justify-content-center align-items-center">
                         <img src="./../images/Vector (2).png" alt="" />
                         <img src="./../images/Vector (2).png" alt="" />
-                        <a href="#!" className="btn__clip more koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white">sEE MORE</a>
+                        <a href="#!" className="btn__clip more koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white"><span>coming soon</span></a>
                         <img src="./../images/Vector (2).png" className="right" alt="" />
                         <img src="./../images/Vector (2).png" className="right" alt="" />
                     </div>
