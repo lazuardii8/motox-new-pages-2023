@@ -47,7 +47,7 @@ const Navbar = (props) => {
                                 window.fullpage_api.moveTo(3)
                                 setToogleMenu(!toogleMenu)
                             }}
-                                className={"pointer font__size--45 text-uppercase color__white koulen normal "}>STEP</a>
+                                className={"pointer font__size--45 text-uppercase color__white koulen normal "}>Mechanics</a>
 
 
                             <hr />
@@ -122,7 +122,7 @@ const Navbar = (props) => {
                                     onClick={() => window.fullpage_api.moveTo(3)}
                                     class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 3 ? "bold" : "opacity__4 normal")}
                                 >
-                                    STEP
+                                    Mechanics
                                 </a>
 
 
