@@ -13,6 +13,7 @@ const Section8 = (props) => {
                     <div className="row justify-content-center">
                         <div className="col-lg-10 col-xl-7">
                             <div className="wrapper__connet-discord position-relative text-center">
+                                <img src="./../images/gfjhfgjs.png" className='glasses d-none d-md-block' alt="" />
                                 <div className='logo'>
                                 </div>
                                 <img src="./../images/Group 706160.png" className='logoWrap' alt="" />

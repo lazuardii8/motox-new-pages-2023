@@ -2914,6 +2914,13 @@ h5 {
 .wrapper__connet-discord {
   margin-top: -3.5rem;
 }
+.wrapper__connet-discord .glasses {
+  position: absolute;
+  right: -5rem;
+  top: 0rem;
+  z-index: 2;
+  width: 250px;
+}
 .wrapper__connet-discord .wrap {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.05);

@@ -29,6 +29,13 @@
 .wrapper {
   &__connet-discord {
     margin-top: -3.5rem;
+    .glasses{
+      position: absolute;
+      right: -5rem;
+      top: 0rem;
+      z-index: 2;
+      width: 250px;
+    }
     .wrap {
       padding: 1rem;
       background: rgba(255, 255, 255, 0.05);
