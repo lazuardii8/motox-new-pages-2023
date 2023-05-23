@@ -27,6 +27,62 @@
 }
 
 .wrapper {
+  &__connet-discord {
+    margin-top: -3.5rem;
+    .wrap {
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1.98047px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(24.7558px);
+      clip-path: polygon(
+        5% 0%,
+        95% 0,
+        100% 12%,
+        100% 88%,
+        95% 100%,
+        5% 100%,
+        0% 88%,
+        0% 12%
+      );
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media screen and(max-width: $br-xs) {
+        height: 155px;
+      }
+    }
+    .logoWrap {
+      width: 88px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 4rem;
+      z-index: 2;
+    }
+
+    .btn-join {
+      margin-top: -2.5rem;
+      z-index: 2;
+      position: relative;
+    }
+
+    .logo {
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.98047px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(25px);
+      margin: 0 auto;
+      display: inline-block;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      transform: rotate(90deg);
+      width: 100px;
+      height: 100px;
+      transform: rotate(90deg) translateX(3rem);
+    }
+  }
   &__height-res {
     &-sec4 {
       @media screen and(max-width: $br-sm) {
@@ -535,6 +591,55 @@
 }
 
 .list {
+  &__website {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and(max-width: $br-md) {
+      justify-content: center;
+    }
+
+    .wrap {
+      padding: 1rem 3rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.98047px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(25px);
+      height: 60px;
+      clip-path: polygon(
+        0% 0%,
+        90% 0,
+        100% 17%,
+        100% 83%,
+        90% 100%,
+        10% 100%,
+        0% 100%,
+        0% 17%
+      );
+      margin-left: -2rem;
+    }
+    .icon {
+      img,
+      svg {
+        width: 60px;
+      }
+    }
+  }
+  &__sosmed {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline-style: none;
+    margin: 0 -2px;
+    li {
+      display: inline-block;
+      padding: 0 2px;
+
+      svg {
+        width: 60px;
+      }
+    }
+  }
 }
 
 .images {
@@ -1309,7 +1414,8 @@
   &__line {
     &-1 {
       position: absolute;
-      right: -13rem;
+      // right: -13rem;
+      right: 0;
       top: 0;
     }
     &-2 {
@@ -1681,7 +1787,7 @@
 
     &-xxs {
       @media screen and(max-width: $br-xxs) {
-        font-size: 30px !important;
+        font-size: 24px !important;
       }
     }
   }
@@ -1768,6 +1874,11 @@
         font-size: 20px !important;
       }
     }
+    &-xx {
+      @media screen and(max-width: $br-xx) {
+        font-size: 18px !important;
+      }
+    }
   }
 
   &__30 {
@@ -1806,6 +1917,11 @@
     &-xs {
       @media screen and(max-width: $br-xs) {
         font-size: 18px !important;
+      }
+    }
+    &-xx {
+      @media screen and(max-width: $br-xx) {
+        font-size: 16px !important;
       }
     }
   }
@@ -2464,6 +2580,55 @@
     }
     @media #{$mq-xxlarge} {
       font-size: 10em !important;
+    }
+  }
+}
+
+@media screen and(max-height: 630px) {
+  @media screen and(min-width: 1024px) {
+    .hres {
+      &.font__size {
+        &--12 {
+          font-size: 10px !important;
+        }
+        &--14 {
+          font-size: 12px !important;
+        }
+        &--16 {
+          font-size: 14px !important;
+        }
+        &--18 {
+          font-size: 16px !important;
+        }
+        &--20 {
+          font-size: 18px !important;
+        }
+        &--24 {
+          font-size: 20px !important;
+        }
+        &--32 {
+          font-size: 24px !important;
+        }
+        &--36 {
+          font-size: 24px !important;
+
+          &.height {
+            font-size: 30px !important;
+          }
+        }
+        &--40 {
+          font-size: 30px !important;
+        }
+        &--50 {
+          font-size: 40px !important;
+        }
+        &--80 {
+          font-size: 60px !important;
+        }
+        &--60 {
+          font-size: 50px !important;
+        }
+      }
     }
   }
 }

@@ -5,7 +5,8 @@ const SecBG = () => {
     return (
         <Fragment>
             <div className="images__line-1">
-                <TopLineIcon />
+                {/* <TopLineIcon /> */}
+                <img src="./../images/sdfsdfsdf.png" alt="" />
             </div>
             <div className="images__line-2">
                 <BottomLineIcon />

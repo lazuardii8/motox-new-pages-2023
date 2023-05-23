@@ -4,7 +4,6 @@ import { TopLineIcon, BottomLineIcon, ROundWrapIcon, RidesIcon, LineOr1Icon, Lin
 const Sec1 = (props) => {
     return (
         <Fragment>
-
             {
                 props.section == 1 ? <Fragment>
                     <div className="images__line-or-1 d-none d-md-block">
@@ -27,7 +26,8 @@ const Sec1 = (props) => {
             }
 
             <div className="images__line-1 d-xs-none">
-                <TopLineIcon />
+                {/* <TopLineIcon /> */}
+                <img src="./../images/sdfsdfsdf.png" alt="" />
             </div>
             <div className="images__line-2 d-xs-none">
                 <BottomLineIcon />

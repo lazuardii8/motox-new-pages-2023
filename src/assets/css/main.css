@@ -2911,6 +2911,52 @@ h5 {
   }
 }
 
+.wrapper__connet-discord {
+  margin-top: -3.5rem;
+}
+.wrapper__connet-discord .wrap {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.98047px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24.7558px);
+  clip-path: polygon(5% 0%, 95% 0, 100% 12%, 100% 88%, 95% 100%, 5% 100%, 0% 88%, 0% 12%);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .wrapper__connet-discord .wrap {
+    height: 155px;
+  }
+}
+.wrapper__connet-discord .logoWrap {
+  width: 88px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4rem;
+  z-index: 2;
+}
+.wrapper__connet-discord .btn-join {
+  margin-top: -2.5rem;
+  z-index: 2;
+  position: relative;
+}
+.wrapper__connet-discord .logo {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.98047px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  margin: 0 auto;
+  display: inline-block;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: rotate(90deg);
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg) translateX(3rem);
+}
 @media screen and (max-width: 576px) and (max-height: 670px) {
   .wrapper__height-res-sec4 {
     overflow: auto;
@@ -3421,6 +3467,44 @@ h5 {
   .wrapper__wrap-all-screan {
     height: calc(var(--height, 1vh) * 100) !important;
   }
+}
+
+.list__website {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 850px) {
+  .list__website {
+    justify-content: center;
+  }
+}
+.list__website .wrap {
+  padding: 1rem 3rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.98047px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  height: 60px;
+  clip-path: polygon(0% 0%, 90% 0, 100% 17%, 100% 83%, 90% 100%, 10% 100%, 0% 100%, 0% 17%);
+  margin-left: -2rem;
+}
+.list__website .icon img,
+.list__website .icon svg {
+  width: 60px;
+}
+.list__sosmed {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline-style: none;
+  margin: 0 -2px;
+}
+.list__sosmed li {
+  display: inline-block;
+  padding: 0 2px;
+}
+.list__sosmed li svg {
+  width: 60px;
 }
 
 .images__line-or-sec2-1 {
@@ -4233,7 +4317,7 @@ h5 {
 }
 .images__line-1 {
   position: absolute;
-  right: -13rem;
+  right: 0;
   top: 0;
 }
 .images__line-2 {
@@ -4549,7 +4633,7 @@ h5 {
 }
 @media screen and (max-width: 375px) {
   .text__60-xxs {
-    font-size: 30px !important;
+    font-size: 24px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -4617,6 +4701,11 @@ h5 {
     font-size: 20px !important;
   }
 }
+@media screen and (max-width: 425px) {
+  .text__40-xx {
+    font-size: 18px !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .text__30-1024 {
     font-size: 25px !important;
@@ -4645,6 +4734,11 @@ h5 {
 @media screen and (max-width: 480px) {
   .text__32-xs {
     font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .text__32-xx {
+    font-size: 16px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -5184,6 +5278,47 @@ h5 {
   }
 }
 
+@media screen and (max-height: 630px) and (min-width: 1024px) {
+  .hres.font__size--12 {
+    font-size: 10px !important;
+  }
+  .hres.font__size--14 {
+    font-size: 12px !important;
+  }
+  .hres.font__size--16 {
+    font-size: 14px !important;
+  }
+  .hres.font__size--18 {
+    font-size: 16px !important;
+  }
+  .hres.font__size--20 {
+    font-size: 18px !important;
+  }
+  .hres.font__size--24 {
+    font-size: 20px !important;
+  }
+  .hres.font__size--32 {
+    font-size: 24px !important;
+  }
+  .hres.font__size--36 {
+    font-size: 24px !important;
+  }
+  .hres.font__size--36.height {
+    font-size: 30px !important;
+  }
+  .hres.font__size--40 {
+    font-size: 30px !important;
+  }
+  .hres.font__size--50 {
+    font-size: 40px !important;
+  }
+  .hres.font__size--80 {
+    font-size: 60px !important;
+  }
+  .hres.font__size--60 {
+    font-size: 50px !important;
+  }
+}
 :root {
   --height: 100vh;
 }
