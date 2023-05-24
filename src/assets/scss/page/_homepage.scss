@@ -27,9 +27,185 @@
 }
 
 .wrapper {
+  &__bg-full {
+    // position: absolute;
+    // z-index: 9;
+    // width: 100%;
+    // height: 100%;
+    // left: 0;
+    // top: 0;
+    // background-color: black;
+    // transition: .5s;
+  }
+  &__video-wrap {
+    position: absolute;
+    width: calc(50vw - 1rem);
+    height: calc(66vh - 1rem);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s;
+    z-index: 1;
+
+    .pos {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #00000099;
+      }
+
+      .cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+  &__text-bottom-info {
+    transition: 0.5s;
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: #ffffff26;
+    }
+  }
+  &__video-wrap-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50vw;
+    height: 66vh;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    z-index: 2;
+    .wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .lineWrap {
+        position: absolute;
+        border: 1.08465px solid rgba(255, 255, 255, 0.15);
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+      }
+
+      .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
+        z-index: 3;
+        width: 39vw;
+        top: -7rem;
+        transition: 0.5s;
+      }
+
+      .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #00000099;
+      }
+
+      .action__sec1 {
+        position: absolute;
+        bottom: 6vh;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+
+        .btn-sosmed {
+          .right {
+            transform: rotate(180deg);
+          }
+          img {
+            @media screen and(max-width: $br-md) {
+              width: 24px;
+            }
+          }
+        }
+      }
+
+      .obj {
+        &-1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &-2 {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        &-3 {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        &-4 {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+
+      .cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+  &__line-sosmed {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: 0.5s;
+
+    .pos {
+      position: relative;
+      height: 89px;
+
+      .sosmed {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3rem;
+      }
+
+      .line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
   &__connet-discord {
     margin-top: -3.5rem;
-    .glasses{
+    .glasses {
       position: absolute;
       right: -5rem;
       top: 0rem;
@@ -650,6 +826,54 @@
 }
 
 .images {
+  &__plus {
+    position: absolute;
+    transition: 0.5s;
+    &.one {
+      left: 12%;
+      top: 13%;
+    }
+    &.two {
+      left: 12%;
+      top: 60%;
+    }
+    &.three {
+      right: 12%;
+      top: 25%;
+    }
+    &.four {
+      right: 12%;
+      top: 75%;
+    }
+  }
+  &__line2 {
+    &-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 89px;
+      object-fit: cover;
+    }
+    &-home {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__dot-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
   &__line-or {
     &-sec2 {
       &-1 {

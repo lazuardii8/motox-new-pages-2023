@@ -2911,6 +2911,155 @@ h5 {
   }
 }
 
+.wrapper__video-wrap {
+  position: absolute;
+  width: calc(50vw - 1rem);
+  height: calc(66vh - 1rem);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s;
+  z-index: 1;
+}
+.wrapper__video-wrap .pos {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wrapper__video-wrap .pos .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #00000099;
+}
+.wrapper__video-wrap .pos .cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.wrapper__text-bottom-info {
+  transition: 0.5s;
+}
+.wrapper__text-bottom-info .line {
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff26;
+}
+.wrapper__video-wrap-loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50vw;
+  height: 66vh;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  z-index: 2;
+}
+.wrapper__video-wrap-loading .wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wrapper__video-wrap-loading .wrap .lineWrap {
+  position: absolute;
+  border: 1.08465px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.wrapper__video-wrap-loading .wrap .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1rem;
+  z-index: 3;
+  width: 39vw;
+  top: -7rem;
+  transition: 0.5s;
+}
+.wrapper__video-wrap-loading .wrap .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #00000099;
+}
+.wrapper__video-wrap-loading .wrap .action__sec1 {
+  position: absolute;
+  bottom: 6vh;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.wrapper__video-wrap-loading .wrap .action__sec1 .btn-sosmed .right {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 850px) {
+  .wrapper__video-wrap-loading .wrap .action__sec1 .btn-sosmed img {
+    width: 24px;
+  }
+}
+.wrapper__video-wrap-loading .wrap .obj-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrapper__video-wrap-loading .wrap .obj-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wrapper__video-wrap-loading .wrap .obj-3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.wrapper__video-wrap-loading .wrap .obj-4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.wrapper__video-wrap-loading .wrap .cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.wrapper__line-sosmed {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+.wrapper__line-sosmed .pos {
+  position: relative;
+  height: 89px;
+}
+.wrapper__line-sosmed .pos .sosmed {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3rem;
+}
+.wrapper__line-sosmed .pos .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .wrapper__connet-discord {
   margin-top: -3.5rem;
 }
@@ -3514,6 +3663,51 @@ h5 {
   width: 60px;
 }
 
+.images__plus {
+  position: absolute;
+  transition: 0.5s;
+}
+.images__plus.one {
+  left: 12%;
+  top: 13%;
+}
+.images__plus.two {
+  left: 12%;
+  top: 60%;
+}
+.images__plus.three {
+  right: 12%;
+  top: 25%;
+}
+.images__plus.four {
+  right: 12%;
+  top: 75%;
+}
+.images__line2-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 89px;
+  object-fit: cover;
+}
+.images__line2-home {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.images__dot-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.images__dot-bg svg {
+  width: 100%;
+  height: 100%;
+}
 .images__line-or-sec2-1 {
   position: absolute;
   left: 49vw;
@@ -5429,6 +5623,7 @@ h5 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   z-index: 999 !important;
+  transition: 0.5s;
 }
 .wrapper__navbar.fixed {
   position: fixed !important;

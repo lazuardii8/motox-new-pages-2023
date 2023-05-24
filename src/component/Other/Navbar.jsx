@@ -83,7 +83,7 @@ const Navbar = (props) => {
                 className={"navbar navbar-expand-lg wrapper__navbar fixed position-relative z-2 " + (toogleMenu ? "active" : "")}
             >
                 <div className="container position-relative">
-                    <img src="./../images/Vector 306.png" className="images__nav-line-1" alt="" />
+                    <img src="./../images/Vector 317.png" className="images__nav-line-1" alt="" />
                     <a
                         onClick={() => window.fullpage_api.moveTo(1)}
                         class={"pointer navbar-brand font__size--18 text__18-1024 normal "}

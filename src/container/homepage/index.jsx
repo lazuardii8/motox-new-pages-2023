@@ -64,7 +64,7 @@ export default class index extends Component {
     return (
       <Fragment>
         {
-          this.state.currentSlide != 8 ? <div className="wrapper__number zen font__size--20 d-none d-md-block">
+          this.state.currentSlide != 8 && this.state.currentSlide != 1 ? <div className="wrapper__number zen font__size--20 d-none d-md-block">
             <div className="d-flex align-items-center">
               <img src="./../images/Vector 304.png" alt="" />
               <div className="mx-3">
@@ -79,6 +79,7 @@ export default class index extends Component {
         <Navbar current={this.state.currentSlide} />
 
         <div className="overflow-hidden position-relative wrapper__wrap-all-screan">
+
           <ReactFullpage
             scrollOverflow={true}
             loopBottom={false}
@@ -101,8 +102,8 @@ export default class index extends Component {
               ></Component>;
               return (
                 <div id="fullpage-wrapper position-relative">
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan d-flex align-items-center justify-content-center">
+                  <div className="section bg__black">
+                    <div className="wrapper__h-100-screan d-flex align-items-center justify-content-center position-relative overflow-hidden">
                       <Suspense fallback={<div>Loading...</div>}>
                         <Section1 />
                       </Suspense>
