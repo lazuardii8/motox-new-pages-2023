@@ -35,7 +35,7 @@
     left: 0;
     top: 0;
     background-color: black;
-    transition: .5s;
+    transition: 0.5s;
   }
   &__video-wrap {
     position: absolute;
@@ -46,6 +46,15 @@
     transform: translate(-50%, -50%) scale(1);
     transition: 0.5s;
     z-index: 1;
+
+    @media screen and(max-width: 1024px) {
+      width: calc(75vw - 1rem);
+    }
+
+    @media screen and(max-width: $br-sm) {
+      width: calc(90vw - 1rem);
+      height: calc(55vh - 1rem);
+    }
 
     .pos {
       position: relative;
@@ -87,6 +96,15 @@
     transform: translate(-50%, -50%);
     transition: 0.5s;
     z-index: 2;
+
+    @media screen and(max-width: 1024px) {
+      width: 75vw;
+    }
+    @media screen and(max-width: $br-sm) {
+      width: 90vw;
+      height: 55vh;
+    }
+
     .wrap {
       position: relative;
       width: 100%;
@@ -112,6 +130,11 @@
         width: 39vw;
         top: -7rem;
         transition: 0.5s;
+
+        @media screen and(max-width: $br-md) {
+          top: -5rem;
+          width: 50vw;
+        }
       }
 
       .bg {
@@ -192,6 +215,12 @@
         top: 50%;
         transform: translateY(-50%);
         right: 3rem;
+
+        @media screen and(max-width: $br-sm) {
+          left: initial;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
 
       .line {

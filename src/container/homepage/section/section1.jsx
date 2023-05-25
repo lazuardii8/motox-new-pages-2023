@@ -12,6 +12,9 @@ const Section1 = (props) => {
 
   useEffect(() => {
     window.fullpage_api.setAllowScrolling(false);
+
+    var windowWidth = $(window).width();
+
     const plusOne = $(".images__plus.one")
     const plusTwo = $(".images__plus.two")
     const plusThree = $(".images__plus.three")
@@ -127,7 +130,11 @@ const Section1 = (props) => {
       css: {
         scale: "1",
         width: "100%",
-        height: "100%"
+        height: "100%",
+        xPercent: -50,
+        yPercent: -50,
+        x: 0,
+        y: 0
       },
     });
 
@@ -179,7 +186,7 @@ const Section1 = (props) => {
 
       TweenMax.to(logo, 1, {
         css: {
-          top: "8%",
+          top: windowWidth > 768 ? "8%" : "5%",
           ease: Circ.easeOut
         },
       }),
@@ -192,8 +199,8 @@ const Section1 = (props) => {
       TweenMax.to(video, 1, {
         css: {
           scale: "1",
-          width: "calc(50vw - 1rem)",
-          height: "calc(66vh - 1rem)",
+          width: windowWidth > 1024 ? "calc(50vw - 1rem)" : windowWidth > 576 ? "calc(75vw - 1rem)" : "calc(90vw - 1rem)",
+          height: windowWidth > 576 ? "calc(66vh - 1rem)" : "calc(55vh - 1rem)",
           ease: "linear",
           delay: 3,
           ease: Circ.easeOut
@@ -306,10 +313,6 @@ const Section1 = (props) => {
           </div>
           <img src="./../images/Group 1502 (1).svg" className="logo" alt="" />
 
-          {/* 
-          <img src="./../images/Rectangle 22653.png" className="cover" alt="" />
-          <div className="bg"></div> */}
-
           <div className="action__sec1">
             <div className="btn-sosmed d-flex align-items-center justify-content-center position-relative z-2">
               <img src="./../images/Vector (2).png" alt="" />
@@ -328,12 +331,12 @@ const Section1 = (props) => {
         <div className="wrapper__text-bottom-info d-flex align-items-center justify-content-between mt-3">
           <div className="d-flex align-items-center flex-shrink-0">
             <DownIcon />
-            <div className="koulen font__size--24 text-text-uppercase color__white ml-2">About the Game</div>
+            <div className="koulen font__size--24 text__24-1024 text-text-uppercase color__white ml-2">About the Game</div>
           </div>
           <div className="line mx-3"></div>
           <div className="d-flex align-items-center flex-shrink-0">
             <PlayIcon />
-            <div className="koulen font__size--24 text-text-uppercase color__white ml-2">watch trailer</div>
+            <div className="koulen font__size--24 text__24-1024 text-text-uppercase color__white ml-2">watch trailer</div>
           </div>
         </div>
       </div>

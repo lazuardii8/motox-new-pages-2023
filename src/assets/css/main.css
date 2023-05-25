@@ -2931,6 +2931,17 @@ h5 {
   transition: 0.5s;
   z-index: 1;
 }
+@media screen and (max-width: 1024px) {
+  .wrapper__video-wrap {
+    width: calc(75vw - 1rem);
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper__video-wrap {
+    width: calc(90vw - 1rem);
+    height: calc(55vh - 1rem);
+  }
+}
 .wrapper__video-wrap .pos {
   position: relative;
   width: 100%;
@@ -2969,6 +2980,17 @@ h5 {
   transition: 0.5s;
   z-index: 2;
 }
+@media screen and (max-width: 1024px) {
+  .wrapper__video-wrap-loading {
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper__video-wrap-loading {
+    width: 90vw;
+    height: 55vh;
+  }
+}
 .wrapper__video-wrap-loading .wrap {
   position: relative;
   width: 100%;
@@ -2993,6 +3015,12 @@ h5 {
   width: 39vw;
   top: -7rem;
   transition: 0.5s;
+}
+@media screen and (max-width: 850px) {
+  .wrapper__video-wrap-loading .wrap .logo {
+    top: -5rem;
+    width: 50vw;
+  }
 }
 .wrapper__video-wrap-loading .wrap .bg {
   position: absolute;
@@ -3062,6 +3090,13 @@ h5 {
   top: 50%;
   transform: translateY(-50%);
   right: 3rem;
+}
+@media screen and (max-width: 576px) {
+  .wrapper__line-sosmed .pos .sosmed {
+    left: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .wrapper__line-sosmed .pos .line {
   position: absolute;
