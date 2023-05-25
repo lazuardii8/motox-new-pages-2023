@@ -2911,6 +2911,16 @@ h5 {
   }
 }
 
+.wrapper__bg-full {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  transition: 0.5s;
+}
 .wrapper__video-wrap {
   position: absolute;
   width: calc(50vw - 1rem);
@@ -3040,6 +3050,7 @@ h5 {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 2;
   transition: 0.5s;
 }
 .wrapper__line-sosmed .pos {
@@ -5630,6 +5641,7 @@ h5 {
   width: 100%;
   left: 0;
   top: 0;
+  transform: translateY(-5rem);
   background-color: transparent !important;
 }
 .wrapper__navbar-menu ul {

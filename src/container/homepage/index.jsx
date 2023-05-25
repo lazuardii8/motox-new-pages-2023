@@ -23,6 +23,7 @@ export default class index extends Component {
       anchor: ["HOME", "ABOUT ME", "PODCAST", "CONTACT"],
       anchorSelect: "",
       isOpen: false,
+      scrollSection: false,
     };
   }
 
@@ -61,6 +62,7 @@ export default class index extends Component {
 
   render() {
     const anchors = [];
+
     return (
       <Fragment>
         {
@@ -104,7 +106,7 @@ export default class index extends Component {
                 <div id="fullpage-wrapper position-relative">
                   <div className="section bg__black">
                     <div className="wrapper__h-100-screan d-flex align-items-center justify-content-center position-relative overflow-hidden">
-                      <Suspense fallback={<div>Loading...</div>}>
+                      <Suspense fallback={<div></div>}>
                         <Section1 />
                       </Suspense>
                     </div>
@@ -112,7 +114,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section2 />
                         </Suspense>
                       </div>
@@ -121,7 +123,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className=" wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section3 />
                         </Suspense>
                       </div>
@@ -130,7 +132,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center wrapper__align-750-680-end">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section4 />
                         </Suspense>
                       </div>
@@ -139,7 +141,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section5 />
                         </Suspense>
                       </div>
@@ -148,7 +150,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section6 />
                         </Suspense>
                       </div>
@@ -157,7 +159,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section7 />
                         </Suspense>
                       </div>
@@ -166,7 +168,7 @@ export default class index extends Component {
                   <div className="section bg__black position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan py-4 d-flex align-items-center wrapper__align-750-end justify-content-center">
                       <div className="w-100">
-                        <Suspense fallback={<div>Loading...</div>}>
+                        <Suspense fallback={<div></div>}>
                           <Section8 />
                         </Suspense>
                       </div>

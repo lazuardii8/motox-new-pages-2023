@@ -2,161 +2,266 @@ import React, { Fragment, useEffect } from "react";
 import { TweenMax, TimelineMax } from "gsap";
 import $ from "jquery";
 import { DiscordIcon, DotIcon, DownIcon, LineBottomIcon, Logov2Icon, PlayIcon } from "../../../component/Svg/Svg";
+import { Power0 } from "gsap";
+import { Power2 } from "gsap";
+import { Circ } from "gsap";
 
 
 const Section1 = (props) => {
 
 
-  // useEffect(() => {
-  //   const plusOne = $(".images__plus.one")
-  //   const plusTwo = $(".images__plus.two")
-  //   const plusThree = $(".images__plus.three")
-  //   const plusFour = $(".images__plus.four")
+  useEffect(() => {
+    window.fullpage_api.setAllowScrolling(false);
+    const plusOne = $(".images__plus.one")
+    const plusTwo = $(".images__plus.two")
+    const plusThree = $(".images__plus.three")
+    const plusFour = $(".images__plus.four")
 
-  //   const logo = $(".wrapper__video-wrap-loading .wrap .logo")
+    const logo = $(".wrapper__video-wrap-loading .wrap .logo")
 
-  //   const action = $(".action__sec1")
+    const action = $(".action__sec1")
 
-  //   const infoBottom = $(".wrapper__text-bottom-info")
+    const infoBottom = $(".wrapper__text-bottom-info")
 
-  //   const sosmed = $(".wrapper__line-sosmed")
+    const sosmed = $(".wrapper__line-sosmed")
 
-  //   const navabar = $(".wrapper__navbar")
+    const navabar = $(".wrapper__navbar")
 
-  //   const videoWrap = $(".wrapper__video-wrap-loading .wrap .lineWrap")
+    const videoWrap = $(".wrapper__video-wrap-loading .wrap .lineWrap")
 
-  //   const video = $(".wrapper__video-wrap")
+    const video = $(".wrapper__video-wrap")
 
-  //   const WrapBg = $(".wrapper__bg-full")
-
-
-  //   // inisialisaisi
-  //   const tl = new TimelineMax({ repeat: 0, delay: 1.5 });
+    const WrapBg = $(".wrapper__bg-full")
 
 
-  //   // start:setMax
-
-  //   TweenMax.set(plusOne, {
-  //     css: {
-  //       opacity: 0,
-  //       x: "0",
-  //       y: "5rem",
-  //     },
-  //   });
-  //   TweenMax.set(plusTwo, {
-  //     css: {
-  //       opacity: 0,
-  //       x: "0",
-  //       y: "5rem",
-  //     },
-  //   });
-  //   TweenMax.set(plusThree, {
-  //     css: {
-  //       opacity: 0,
-  //       x: "0",
-  //       y: "5rem",
-  //     },
-  //   });
-  //   TweenMax.set(plusFour, {
-  //     css: {
-  //       opacity: 0,
-  //       x: "0",
-  //       y: "5rem",
-  //     },
-  //   });
+    // inisialisaisi
+    const tl = new TimelineMax({
+      repeat: 0, delay: 1.5, onComplete: () => {
+        window.fullpage_api.setAllowScrolling(true);
+      }
+    });
 
 
+    // start:setMax
 
-  //   TweenMax.set(action, {
-  //     css: {
-  //       opacity: 0,
-  //       x: "-50%",
-  //       y: "5rem",
-  //     },
-  //   });
-
-
-  //   TweenMax.set(infoBottom, {
-  //     css: {
-  //       opacity: 0,
-  //       y: "5rem",
-  //     },
-  //   });
-
-
-  //   TweenMax.set(logo, {
-  //     css: {
-  //       opacity: 0,
-  //       x: "-50%",
-  //       y: "-50%",
-  //       top: "60%",
-  //       scale: "0.2"
-  //     },
-  //   });
-
-
-  //   TweenMax.set(sosmed, {
-  //     css: {
-  //       opacity: 0,
-  //       y: "5rem",
-  //     },
-  //   });
+    TweenMax.set(plusOne, {
+      css: {
+        opacity: 0,
+        x: "0",
+        y: "5rem",
+      },
+    });
+    TweenMax.set(plusTwo, {
+      css: {
+        opacity: 0,
+        x: "0",
+        y: "5rem",
+      },
+    });
+    TweenMax.set(plusThree, {
+      css: {
+        opacity: 0,
+        x: "0",
+        y: "5rem",
+      },
+    });
+    TweenMax.set(plusFour, {
+      css: {
+        opacity: 0,
+        x: "0",
+        y: "5rem",
+      },
+    });
 
 
-  //   TweenMax.set(navabar, {
-  //     css: {
-  //       opacity: 0,
-  //       y: "-5rem",
-  //     },
-  //   });
 
-  //   TweenMax.set(videoWrap, {
-  //     css: {
-  //       opacity: 0,
-  //       scale: "0.2"
-  //     },
-  //   });
-
-  //   TweenMax.set(video, {
-  //     css: {
-  //       scale: "1",
-  //       width: "100%",
-  //       height: "100%"
-  //     },
-  //   });
+    TweenMax.set(action, {
+      css: {
+        opacity: 0,
+        bottom: "-8vh",
+      },
+    });
 
 
-  //   // end:setMax
+    TweenMax.set(infoBottom, {
+      css: {
+        opacity: 0,
+        y: "5rem",
+      },
+    });
 
 
-  //   // start:animation
-  //   tl.add([
-  //     TweenMax.to(WrapBg, 1, {
-  //       css: {
-  //         opacity: 0,
-  //       },
-  //     }),
-
-  //     TweenMax.to(logo, 1, {
-  //       css: {
-  //         opacity: 1,
-  //         x: "-50%",
-  //         y: "-60%",
-  //         scale: "1"
-  //       },
-  //     }),
+    TweenMax.set(logo, {
+      css: {
+        opacity: 0,
+        yPercent: -50,
+        top: "50%",
+        scale: "0.2"
+      },
+    });
 
 
-  //     TweenMax.to(WrapBg, 1, {
-  //       css: {
-  //         visibility: "hidden"
-  //       },
-  //     }),
+    TweenMax.set(sosmed, {
+      css: {
+        opacity: 0,
+        y: "5rem",
+      },
+    });
 
-  //   ]);
-  //   // end:animation
 
-  // }, [])
+    TweenMax.set(navabar, {
+      css: {
+        opacity: 0,
+        y: "-5rem",
+      },
+    });
+
+    TweenMax.set(videoWrap, {
+      css: {
+        opacity: 0,
+        scale: "0.2"
+      },
+    });
+
+    TweenMax.set(video, {
+      css: {
+        scale: "1",
+        width: "100%",
+        height: "100%"
+      },
+    });
+
+
+    // end:setMax
+
+
+    // start:animation
+    tl.add([
+      TweenMax.to(WrapBg, 1, {
+        css: {
+          opacity: 0,
+        },
+      }),
+
+      TweenMax.to(logo, 1, {
+        css: {
+          opacity: 1,
+          scale: "1",
+          ease: Circ.easeOut
+        },
+      }),
+
+    ]);
+
+    tl.add([
+      TweenMax.to(WrapBg, 1, {
+        css: {
+          visibility: "hidden"
+        },
+      }),
+
+      TweenMax.to(navabar, 1, {
+        css: {
+          opacity: 1,
+          y: "0rem",
+        },
+      }),
+
+      TweenMax.to(sosmed, 1, {
+        css: {
+          opacity: 1,
+          y: "0rem",
+        },
+      }),
+    ]);
+
+    tl.add([
+
+      TweenMax.to(logo, 1, {
+        css: {
+          top: "8%",
+          ease: Circ.easeOut
+        },
+      }),
+
+    ]);
+
+
+    tl.add([
+
+      TweenMax.to(video, 1, {
+        css: {
+          scale: "1",
+          width: "calc(50vw - 1rem)",
+          height: "calc(66vh - 1rem)",
+          ease: "linear",
+          delay: 3,
+          ease: Circ.easeOut
+        },
+      }),
+
+    ]);
+
+    tl.add([
+
+      TweenMax.to(videoWrap, {
+        css: {
+          opacity: 1,
+          scale: "1",
+        },
+      }),
+      TweenMax.to(action, {
+        css: {
+          opacity: 1,
+          bottom: "6vh"
+        },
+      }),
+
+
+      TweenMax.to(infoBottom, {
+        css: {
+          opacity: 1,
+          y: "0",
+        },
+      }),
+
+    ]);
+
+    tl.add([
+
+      TweenMax.to(plusOne, 1, {
+        css: {
+          opacity: 1,
+          x: "0",
+          y: "0",
+        },
+      }),
+      TweenMax.to(plusTwo, 2, {
+        css: {
+          opacity: 1,
+          x: "0",
+          y: "0",
+        },
+      }),
+      TweenMax.to(plusThree, 3, {
+        css: {
+          opacity: 1,
+          x: "0",
+          y: "0",
+        },
+      }),
+      TweenMax.to(plusFour, 4, {
+        css: {
+          opacity: 1,
+          x: "0",
+          y: "0",
+        },
+      }),
+
+    ]);
+    // // end:animation
+
+  }, [])
 
 
 

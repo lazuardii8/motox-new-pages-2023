@@ -125,12 +125,14 @@
     padding-bottom: 1rem;
     z-index: 999 !important;
     transition: .5s;
+    
 
     &.fixed {
       position: fixed !important;
       width: 100%;
       left: 0;
       top: 0;
+      transform: translateY(-5rem);
       background-color: transparent !important;
     }
     &.active {
