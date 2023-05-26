@@ -287,7 +287,7 @@ const Section1 = (props) => {
           {/* <img src="./../images/Rectangle 22653.png" className="cover" alt="" /> */}
           <video
             data-keepplaying
-            poster="./../images/Rectangle 22653.png"
+            // poster="./../images/Rectangle 22653.png"
             className="cover"
             autoPlay
             controls={false}
