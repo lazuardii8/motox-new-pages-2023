@@ -96,10 +96,10 @@ const Section1 = (props) => {
 
     TweenMax.set(logo, {
       css: {
-        opacity: 0,
+        opacity: 1,
         yPercent: -50,
         top: "50%",
-        scale: "0.2"
+        // scale: "0.2"
       },
     });
 
@@ -150,13 +150,13 @@ const Section1 = (props) => {
         },
       }),
 
-      TweenMax.to(logo, 1, {
-        css: {
-          opacity: 1,
-          scale: "1",
-          ease: Circ.easeOut
-        },
-      }),
+      // TweenMax.to(logo, 1, {
+      //   css: {
+      //     opacity: 1,
+      //     scale: "1",
+      //     ease: Circ.easeOut
+      //   },
+      // }),
 
     ]);
 
@@ -183,13 +183,20 @@ const Section1 = (props) => {
     ]);
 
     tl.add([
-
       TweenMax.to(logo, 1, {
         css: {
+          scale: "1",
           top: windowWidth > 768 ? "8%" : "5%",
           ease: Circ.easeOut
         },
       }),
+
+      //   TweenMax.to(logo, 1, {
+      //     css: {
+      //       top: windowWidth > 768 ? "8%" : "5%",
+      //       ease: Circ.easeOut
+      //     },
+      //   }),
 
     ]);
 
