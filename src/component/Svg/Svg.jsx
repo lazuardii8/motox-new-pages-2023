@@ -220,6 +220,14 @@ export const LogoIcon = ({ width, height, color }) => {
   )
 }
 
+export const ClosedIcon = ({ width, height, color }) => {
+  return (
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.24 7.92993L14.9362 13.2324L9.63371 7.92993L7.86621 9.69743L13.1687 14.9999L7.86621 20.3024L9.63371 22.0699L14.9362 16.7674L20.24 22.0699L22.0075 20.3024L16.705 14.9999L22.0075 9.69743L20.24 7.92993Z" fill="white" />
+    </svg>
+
+  )
+}
 export const DownIcon = ({ width, height, color }) => {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,8 +240,8 @@ export const DownIcon = ({ width, height, color }) => {
 export const PlayIcon = ({ width, height, color }) => {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9.3335 8V24L22.6668 16L9.3335 8Z" fill="white"/>
-    </svg>    
+      <path d="M9.3335 8V24L22.6668 16L9.3335 8Z" fill="white" />
+    </svg>
   )
 }
 export const TiktokIcon = ({ width, height, color }) => {

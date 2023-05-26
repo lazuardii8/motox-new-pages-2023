@@ -279,7 +279,6 @@ const Section1 = (props) => {
 
   return (
     <Fragment>
-
       <div className="wrapper__bg-full"></div>
 
       <div className="wrapper__video-wrap">
@@ -351,12 +350,12 @@ const Section1 = (props) => {
         </div>
 
         <div className="wrapper__text-bottom-info d-flex align-items-center justify-content-between mt-3">
-          <div className="d-flex align-items-center flex-shrink-0">
+          <div className="d-flex align-items-center flex-shrink-0 pointer" onClick={() => window.fullpage_api.moveTo(2)}>
             <DownIcon />
             <div className="koulen font__size--24 text__24-1024 text-text-uppercase color__white ml-2">About the Game</div>
           </div>
           <div className="line mx-3"></div>
-          <div className="d-flex align-items-center flex-shrink-0">
+          <div className="d-flex align-items-center flex-shrink-0 pointer" onClick={props.toogleModal}>
             <PlayIcon />
             <div className="koulen font__size--24 text__24-1024 text-text-uppercase color__white ml-2">watch trailer</div>
           </div>

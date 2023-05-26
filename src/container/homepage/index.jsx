@@ -1,7 +1,8 @@
 import React, { Component, Fragment, Suspense } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Navbar from "../../component/Other/Navbar";
-import { Sec4Line2Icon, Sec5Line2Icon, Sec5Line3Icon, Sec6Line4Icon, Sec7Line1Icon, Sec7Line2Icon } from "../../component/Svg/Svg";
+import { ClosedIcon, Sec4Line2Icon, Sec5Line2Icon, Sec5Line3Icon, Sec6Line4Icon, Sec7Line1Icon, Sec7Line2Icon } from "../../component/Svg/Svg";
+import ReactPlayer from "react-player";
 
 
 const Section1 = React.lazy(() => import('./section/section1'));
@@ -23,7 +24,6 @@ export default class index extends Component {
       anchor: ["HOME", "ABOUT ME", "PODCAST", "CONTACT"],
       anchorSelect: "",
       isOpen: false,
-      scrollSection: false,
     };
   }
 
@@ -60,9 +60,15 @@ export default class index extends Component {
     style.setProperty("--height", `${window.innerHeight}px`);
   }
 
+  toogleModal = () => {
+    console.log('modal')
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
+
   render() {
     const anchors = [];
-
     return (
       <Fragment>
         {
@@ -76,6 +82,26 @@ export default class index extends Component {
             </div>
           </div> : ""
         }
+
+        <div className={"wrapper__modal-full-video " + (this.state.isOpen ? "active" : "")}>
+          <div className="wrap">
+            <div className="close pointer" onClick={this.toogleModal}>
+              <ClosedIcon />
+            </div>
+            <ReactPlayer
+              className="loading_img"
+              url="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
+              playing={this.state.isOpen}
+              muted={false}
+              autoPlay={this.state.isOpen}
+              playsinline={true}
+              width="100%"
+              height="100%"
+              controls={true}
+            />
+          </div>
+        </div>
+
 
 
         <Navbar current={this.state.currentSlide} />
@@ -107,7 +133,7 @@ export default class index extends Component {
                   <div className="section bg__black">
                     <div className="wrapper__h-100-screan d-flex align-items-center justify-content-center position-relative overflow-hidden">
                       <Suspense fallback={<div></div>}>
-                        <Section1 />
+                        <Section1 toogleModal={this.toogleModal} />
                       </Suspense>
                     </div>
                   </div>
