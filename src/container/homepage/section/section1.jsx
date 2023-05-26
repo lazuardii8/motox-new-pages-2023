@@ -2,8 +2,6 @@ import React, { Fragment, useEffect } from "react";
 import { TweenMax, TimelineMax } from "gsap";
 import $ from "jquery";
 import { DiscordIcon, DotIcon, DownIcon, LineBottomIcon, Logov2Icon, PlayIcon } from "../../../component/Svg/Svg";
-import { Power0 } from "gsap";
-import { Power2 } from "gsap";
 import { Circ } from "gsap";
 
 
@@ -286,7 +284,24 @@ const Section1 = (props) => {
 
       <div className="wrapper__video-wrap">
         <div className="pos">
-          <img src="./../images/Rectangle 22653.png" className="cover" alt="" />
+          {/* <img src="./../images/Rectangle 22653.png" className="cover" alt="" /> */}
+          <video
+            data-keepplaying
+            poster="./../images/Rectangle 22653.png"
+            className="cover"
+            autoPlay
+            controls={false}
+            loop
+            playsInline
+            preload
+            muted
+          >
+            <source
+              src="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
           <div className="bg"></div>
         </div>
       </div>
