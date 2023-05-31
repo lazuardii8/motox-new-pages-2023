@@ -33,6 +33,7 @@ export default class index extends Component {
 
   onLeave(origin, destination, direction) {
     // console.log("Leaving section " + origin.index);
+    this.solveSkipPages(origin, destination, direction)
 
     // $(".onScroll").removeClass("aos-animate");
   }
@@ -43,11 +44,18 @@ export default class index extends Component {
 
   afterLoad(origin, destination, direction) {
     // console.log("After load: " + destination.index);
-
     this.setState({
       currentSlide: destination.index + 1,
     });
 
+  }
+
+  solveSkipPages(origin, destination, direction) {
+    // console.log(direction)
+    window.fullpage_api.moveTo(destination.index)
+    // setTimeout(function () {
+    //   fullpage_api.moveTo(destinationIndex);
+    // });
   }
 
   fullapi(state, api) {
