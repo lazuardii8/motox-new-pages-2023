@@ -51,11 +51,11 @@ export default class index extends Component {
   }
 
   solveSkipPages(origin, destination, direction) {
-    // console.log(direction)
-    window.fullpage_api.moveTo(destination.index)
-    // setTimeout(function () {
-    //   fullpage_api.moveTo(destinationIndex);
-    // });
+    console.log(destination.index + 1)
+    // window.fullpage_api.moveTo(destination.index)
+    setTimeout(function () {
+      window.fullpage_api.moveTo(destination.index + 1);
+    });
   }
 
   fullapi(state, api) {
@@ -122,7 +122,8 @@ export default class index extends Component {
             loopTop={false}
             css3={true}
             autoScrolling={true}
-            scrollingSpeed={600}
+            scrollingSpeed={1000}
+            touchSensitivity={15}
             // anchors={anchors}
             // navigation
             // navigationTooltips={anchors}
