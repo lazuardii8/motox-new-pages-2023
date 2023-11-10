@@ -1,368 +1,68 @@
-import React, { Fragment, useEffect } from "react";
-import { TweenMax, TimelineMax } from "gsap";
-import $ from "jquery";
+import React, { Fragment } from "react";
 import { DiscordIcon, DotIcon, DownIcon, LineBottomIcon, Logov2Icon, PlayIcon } from "../../../component/Svg/Svg";
 import { Circ } from "gsap";
 
 
 const Section1 = (props) => {
-
-
-  useEffect(() => {
-    window.fullpage_api.setAllowScrolling(false);
-
-    var windowWidth = $(window).width();
-
-    const plusOne = $(".images__plus.one")
-    const plusTwo = $(".images__plus.two")
-    const plusThree = $(".images__plus.three")
-    const plusFour = $(".images__plus.four")
-
-    const logo = $(".wrapper__video-wrap-loading .wrap .logo")
-
-    const action = $(".action__sec1")
-
-    const infoBottom = $(".wrapper__text-bottom-info")
-
-    const sosmed = $(".wrapper__line-sosmed")
-
-    const navabar = $(".wrapper__navbar")
-
-    const videoWrap = $(".wrapper__video-wrap-loading .wrap .lineWrap")
-
-    const video = $(".wrapper__video-wrap")
-
-    const WrapBg = $(".wrapper__bg-full")
-
-
-    // inisialisaisi
-    const tl = new TimelineMax({
-      repeat: 0, delay: 1.5, onComplete: () => {
-        window.fullpage_api.setAllowScrolling(true);
-      }
-    });
-
-
-    // start:setMax
-
-    TweenMax.set(plusOne, {
-      css: {
-        opacity: 0,
-        x: "0",
-        y: "5rem",
-      },
-    });
-    TweenMax.set(plusTwo, {
-      css: {
-        opacity: 0,
-        x: "0",
-        y: "5rem",
-      },
-    });
-    TweenMax.set(plusThree, {
-      css: {
-        opacity: 0,
-        x: "0",
-        y: "5rem",
-      },
-    });
-    TweenMax.set(plusFour, {
-      css: {
-        opacity: 0,
-        x: "0",
-        y: "5rem",
-      },
-    });
-
-
-
-    TweenMax.set(action, {
-      css: {
-        opacity: 0,
-        bottom: "-8vh",
-      },
-    });
-
-
-    TweenMax.set(infoBottom, {
-      css: {
-        opacity: 0,
-        y: "5rem",
-      },
-    });
-
-
-    TweenMax.set(logo, {
-      css: {
-        opacity: 1,
-        yPercent: -50,
-        top: "50%",
-        // scale: "0.2"
-      },
-    });
-
-
-    TweenMax.set(sosmed, {
-      css: {
-        opacity: 0,
-        y: "5rem",
-      },
-    });
-
-
-    TweenMax.set(navabar, {
-      css: {
-        opacity: 0,
-        y: "-5rem",
-      },
-    });
-
-    TweenMax.set(videoWrap, {
-      css: {
-        opacity: 0,
-        scale: "0.2"
-      },
-    });
-
-    TweenMax.set(video, {
-      css: {
-        scale: "1",
-        width: "100%",
-        height: "100%",
-        xPercent: -50,
-        yPercent: -50,
-        x: 0,
-        y: 0
-      },
-    });
-
-
-    // end:setMax
-
-
-    // start:animation
-    tl.add([
-      TweenMax.to(WrapBg, 1, {
-        css: {
-          opacity: 0,
-        },
-      }),
-
-      // TweenMax.to(logo, 1, {
-      //   css: {
-      //     opacity: 1,
-      //     scale: "1",
-      //     ease: Circ.easeOut
-      //   },
-      // }),
-
-    ]);
-
-    tl.add([
-      TweenMax.to(WrapBg, 1, {
-        css: {
-          visibility: "hidden"
-        },
-      }),
-
-      TweenMax.to(navabar, 1, {
-        css: {
-          opacity: 1,
-          y: "0rem",
-        },
-      }),
-
-      TweenMax.to(sosmed, 1, {
-        css: {
-          opacity: 1,
-          y: "0rem",
-        },
-      }),
-    ]);
-
-    tl.add([
-      TweenMax.to(logo, 1, {
-        css: {
-          scale: "1",
-          top: windowWidth > 768 ? "8%" : "5%",
-          ease: Circ.easeOut
-        },
-      }),
-
-      //   TweenMax.to(logo, 1, {
-      //     css: {
-      //       top: windowWidth > 768 ? "8%" : "5%",
-      //       ease: Circ.easeOut
-      //     },
-      //   }),
-
-    ]);
-
-
-    tl.add([
-
-      TweenMax.to(video, 1, {
-        css: {
-          scale: "1",
-          width: windowWidth > 1024 ? "calc(50vw - 1rem)" : windowWidth > 576 ? "calc(75vw - 1rem)" : "calc(90vw - 1rem)",
-          height: windowWidth > 576 ? "calc(66vh - 1rem)" : "calc(55vh - 1rem)",
-          ease: "linear",
-          delay: 3,
-          ease: Circ.easeOut
-        },
-      }),
-
-    ]);
-
-    tl.add([
-
-      TweenMax.to(videoWrap, {
-        css: {
-          opacity: 1,
-          scale: "1",
-        },
-      }),
-      TweenMax.to(action, {
-        css: {
-          opacity: 1,
-          bottom: "6vh"
-        },
-      }),
-
-
-      TweenMax.to(infoBottom, {
-        css: {
-          opacity: 1,
-          y: "0",
-        },
-      }),
-
-    ]);
-
-    tl.add([
-
-      TweenMax.to(plusOne, 1, {
-        css: {
-          opacity: 1,
-          x: "0",
-          y: "0",
-        },
-      }),
-      TweenMax.to(plusTwo, 2, {
-        css: {
-          opacity: 1,
-          x: "0",
-          y: "0",
-        },
-      }),
-      TweenMax.to(plusThree, 3, {
-        css: {
-          opacity: 1,
-          x: "0",
-          y: "0",
-        },
-      }),
-      TweenMax.to(plusFour, 4, {
-        css: {
-          opacity: 1,
-          x: "0",
-          y: "0",
-        },
-      }),
-
-    ]);
-    // // end:animation
-
-  }, [])
-
-
-
   return (
     <Fragment>
-      <div className="wrapper__bg-full"></div>
 
-      <div className="wrapper__video-wrap">
-        <div className="pos">
-          {/* <img src="./../images/Rectangle 22653.png" className="cover" alt="" /> */}
-          <video
-            data-keepplaying
-            // poster="./../images/Rectangle 22653.png"
-            className="cover"
-            autoPlay
-            controls={false}
-            loop
-            playsInline
-            preload
-            muted
-          >
-            <source
-              src="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <div className="bg"></div>
-        </div>
-      </div>
+      <img src="./../images/Vector (1).svg" className="absolute right-0 bottom-0 w-[168vh]" alt="" />
 
-      <div className="image__dot-bg">
-        <DotIcon />
-      </div>
-
-      <img src="./../images/Group 706181.png" className="images__line2-home" alt="" />
-
-      <div className="wrapper__line-sosmed">
-        <div className="pos">
-          <img src="./../images/sos (2).png" className="sosmed" alt="" />
-          <img src="./../images/Group 706118 (1).svg" className="line" alt="" />
-        </div>
-      </div>
-
-      <img src="./../images/sfsfsf.png" className="images__plus one" alt="" />
-      <img src="./../images/sfsfsf.png" className="images__plus two" alt="" />
-      <img src="./../images/sfsfsf.png" className="images__plus three" alt="" />
-      <img src="./../images/sfsfsf.png" className="images__plus four" alt="" />
-
-
-      <div className="wrapper__video-wrap-loading">
-        <div className="wrap">
-          <div className="lineWrap">
-            <img src="./../images/rc (1).png" className="obj-1" alt="" />
-            <img src="./../images/rc (4).png" className="obj-2" alt="" />
-            <img src="./../images/rc (3).png" className="obj-3" alt="" />
-            <img src="./../images/rc (2).png" className="obj-4" alt="" />
+      <div className="absolute w-full bottom-0 left-0 h-[90px] flex items-center justify-center" style={{ backgroundImage: "url('./../images/Frame 706117.svg')" }}>
+        <div className="container">
+          <div className="flex items-center justify-end gap-4">
+            <img src="./../images/ss (1).png" alt="" />
+            <img src="./../images/ss (3).png" alt="" />
+            <img src="./../images/ss (2).png" alt="" />
           </div>
-          <img src="./../images/Group 1502 (1).svg" className="logo" alt="" />
+        </div>
+      </div>
 
-          <div className="action__sec1">
-            <div className="btn-sosmed d-flex align-items-center justify-content-center position-relative z-2">
-              <img src="./../images/Vector (2).png" alt="" />
-              <img src="./../images/Vector (2).png" alt="" />
-              <a href="https://discord.gg/AhJz97vxsw" target="_blank" className="btn__clip">
-                <DiscordIcon />
+      <div className="container relative z-[2] h-full">
+        <img src="./../images/Rectangle 22653.png" className="absolute w-[52vw] h-[56vh] hminlg700:w-[61vw] hminxl700:w-[46rem] hminxl900:w-[51rem] top-[54%] object-cover -translate-y-1/2 left-[27%] hminxl700:left-[24%]" alt="" />
+        <div className="absolute bottom-0 left-[6rem] hminlg700:left-[9rem] lg:left-[13rem]">
+          <img src="./../images/pose 5.png" className="w-[54vh]" alt="" />
+        </div>
+        <img src="./../images/Rectangle 22580.svg" className="absolute left-0 top-0" alt="" />
+
+        <img src="./../images/Group 706118.png" className="absolute left-[2rem] lg:left-[3rem] top-[27vh] w-[15vh] lg:w-auto" alt="" />
+
+
+        <div className="absolute right-[3rem] lg:right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] top-[18%] lg:top-[13%] hminlg700:top-[16%] hminxl900:top-[18%] text-center z-[10]">
+          <div className="text-right inline-block">
+            <h5 className="uppercase koulen text__48 text-white mb-2">WELCOME TO MOTOX</h5>
+            <img src="./../images/RIDERS.svg" className="w-[55vh] lg:w-[66vh] hminlg700:w-[50vh] hminxl900:w-[50vh]" alt="" />
+          </div>
+          <div className="flex items-center gap-3 mt-8">
+            <div className="relative inline-block">
+              <div className="absolute w-[271px] h-full -left-[3rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
+              <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[36px] lg:px-[52px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
+                <span className="-skew-x-[40deg] relative z-[2]">
+                  join BETA
+                </span>
               </a>
-              <a href="#!" className="btn__clip long koulen normal font__size--55 text__50-1024 text__50-md text__50-sm text__50-xxs text-uppercase color__white ml-2 ml-lg-3"><span>buy now</span></a>
-              <img src="./../images/Vector (2).png" className="right" alt="" />
-              <img src="./../images/Vector (2).png" className="right" alt="" />
+            </div>
+            <div className="relative inline-block">
+              <div className="absolute w-[271px] h-full -right-[3rem] bg-shadow-btn skew-x-[40deg]"></div>
+              <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[32px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                <img src="./../images/Mask group.png" className="absolute left-0 top-0" alt="" />
+                <img src="./../images/discord.svg" className="-skew-x-[40deg] relative z-[2] w-[52px]" alt="" />
+              </a>
             </div>
           </div>
-
         </div>
 
-        <div className="wrapper__text-bottom-info d-flex align-items-center justify-content-between mt-3">
-          <div className="d-flex align-items-center flex-shrink-0 pointer" onClick={() => window.fullpage_api.moveTo(2)}>
-            <DownIcon />
-            <div className="koulen font__size--24 text__24-1024 text-text-uppercase color__white ml-2">About the Game</div>
-          </div>
-          <div className="line mx-3"></div>
-          <div className="d-flex align-items-center flex-shrink-0 pointer" onClick={props.toogleModal}>
-            <PlayIcon />
-            <div className="koulen font__size--24 text__24-1024 text-text-uppercase color__white ml-2">watch trailer</div>
+        <div className="absolute z-[10] right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] bottom-[22vh]">
+          <div className="flex items-center gap-3 pointer" onClick={props.toogleModal}>
+            <img src="./../images/Group 706149.svg" className="w-[60px]" alt="" />
+            <span className="koulen text__32 text-white">watch trailer</span>
           </div>
         </div>
+
       </div>
-
-
+      <img src="./../images/Group 706219.svg" className="absolute left-0 bottom-0 w-[163vh] z-[2] pointer-events-none" alt="" />
 
     </Fragment>
   );

@@ -132,7 +132,6 @@
       width: 100%;
       left: 0;
       top: 0;
-      transform: translateY(-5rem);
       background-color: transparent !important;
     }
     &.active {
@@ -144,21 +143,6 @@
     &-menu {
       ul {
         position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 116%;
-          right: -4vw;
-          top: 50%;
-          transform: translateY(-50%);
-          background: linear-gradient(
-            90deg,
-            #000000 -30.23%,
-            rgba(0, 0, 0, 0) 90.7%
-          );
-          clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
-        }
         li {
           position: relative;
           z-index: 2;

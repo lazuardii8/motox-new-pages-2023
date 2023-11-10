@@ -79,18 +79,7 @@ export default class index extends Component {
     const anchors = [];
     return (
       <Fragment>
-        {
-          this.state.currentSlide != 8 && this.state.currentSlide != 1 ? <div className="wrapper__number zen font__size--20 d-none d-md-block">
-            <div className="d-flex align-items-center">
-              <img src="./../images/Vector 304.png" alt="" />
-              <div className="mx-3">
-                % {this.state.currentSlide <= 9 ? 0 : ""}{this.state.currentSlide}
-              </div>
-              <img src="./../images/Vector 305.png" className="right" alt="" />
-            </div>
-          </div> : ""
-        }
-
+        
         <div className={"wrapper__modal-full-video " + (this.state.isOpen ? "active" : "")}>
           <div className="wrap">
             <div className="close pointer" onClick={this.toogleModal}>
@@ -124,10 +113,6 @@ export default class index extends Component {
             autoScrolling={true}
             scrollingSpeed={1000}
             touchSensitivity={15}
-            // anchors={anchors}
-            // navigation
-            // navigationTooltips={anchors}
-            normalScrollElements={".wrapper__side-nav-mobile"}
             onLeave={this.onLeave.bind(this)}
             afterLoad={this.afterLoad.bind(this)}
             afterRender={this.afterRender.bind(this)}
@@ -139,16 +124,20 @@ export default class index extends Component {
               ></Component>;
               return (
                 <div id="fullpage-wrapper position-relative">
-                  <div className="section bg__black">
-                    <div className="wrapper__h-100-screan d-flex align-items-center justify-content-center position-relative overflow-hidden">
-                      <Suspense fallback={<div></div>}>
-                        <Section1 toogleModal={this.toogleModal} />
-                      </Suspense>
+                  <div className="section bg__black position-relative overflow-hidden">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
+                      <div className="w-100 h-full">
+                        <Suspense fallback={<div></div>}>
+                          <Section1 toogleModal={this.toogleModal} />
+                        </Suspense>
+                      </div>
                     </div>
                   </div>
                   <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
-                      <div className="w-100">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
+                      <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
                           <Section2 />
                         </Suspense>
@@ -156,8 +145,9 @@ export default class index extends Component {
                     </div>
                   </div>
                   <div className="section bg__black position-relative overflow-hidden">
-                    <div className=" wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
-                      <div className="w-100">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className=" wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
+                      <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
                           <Section3 />
                         </Suspense>
@@ -165,8 +155,9 @@ export default class index extends Component {
                     </div>
                   </div>
                   <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center wrapper__align-750-680-end">
-                      <div className="w-100">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center wrapper__align-750-680-end">
+                      <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
                           <Section4 />
                         </Suspense>
@@ -174,8 +165,9 @@ export default class index extends Component {
                     </div>
                   </div>
                   <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
-                      <div className="w-100">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
+                      <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
                           <Section5 />
                         </Suspense>
@@ -183,8 +175,9 @@ export default class index extends Component {
                     </div>
                   </div>
                   <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
-                      <div className="w-100">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
+                      <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
                           <Section6 />
                         </Suspense>
@@ -192,19 +185,11 @@ export default class index extends Component {
                     </div>
                   </div>
                   <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan py-4 d-flex align-items-center justify-content-center">
-                      <div className="w-100">
+                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
+                      <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
                           <Section7 />
-                        </Suspense>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <div className="wrapper__h-100-screan py-4 d-flex align-items-center wrapper__align-750-end justify-content-center">
-                      <div className="w-100">
-                        <Suspense fallback={<div></div>}>
-                          <Section8 />
                         </Suspense>
                       </div>
                     </div>

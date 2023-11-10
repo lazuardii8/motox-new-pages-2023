@@ -4,22 +4,69 @@ import Sec1 from '../../../component/Background/Sec1'
 const Section7 = (props) => {
     return (
         <Fragment>
+            <img src="./../images/Group 706227.svg" className='absolute left-0 top-0 w-full h-fill' alt="" />
+            <img src="./../images/91f04412-a7b8-426b-bbd3-0c029c09fc2b 1.png" className='absolute right-0 top-[54%] -translate-y-1/2 w-[116vh]' alt="" />
 
-            <Sec1 section={5} />
+            <div className="container relative h-full">
+                <div className="absolute left-0 top-[54%] -translate-y-1/2">
 
-            <img src="./../images/Group 706126.png" className='images__sec7-chacter' alt="" />
+                    <h2 className='koulen text__95 text-white mb-[4rem]'>connect with us!</h2>
 
-            <div className="container position-relative sm z-2">
-                <div className="wrapper__text-heading sec7">
-                    <h3 className='zen font__size--30 text__30-1024 text__30-md text__30-sm text-uppercase' style={{ color: "#FF716A" }}>Events</h3>
-                    <h1 className='zen font__size--50 text__50-1024 text__50-md text__50-sm text__50-xxs normal text-uppercase text__shadow-head text__outline-white mt-4 position-relative z-2'>Supercross championshop</h1>
-                    <h2 className='normal font__size--20 text__20-1024 lh__6 mb-0 opacity__7 mb-3 position-relative z-2'>Bibendum velit sollicitudin facilisi nisl praesent orci faucibus aliquam. Aenean vehicula porttitor quam sit enim id viverra. Erat consectetur turpis et aliquet.</h2>
-                    <div className="wrapper__btn-sosmed d-flex justify-content-md-start justify-content-center align-items-center">
-                        <img src="./../images/Vector (2).png" alt="" />
-                        <img src="./../images/Vector (2).png" alt="" />
-                        <a href="#!" className="btn__clip more koulen normal font__size--40 text__40-1024 text__40-md text__1024-sm text-uppercase color__white"><span>coming soon</span></a>
-                        <img src="./../images/Vector (2).png" className="right" alt="" />
-                        <img src="./../images/Vector (2).png" className="right" alt="" />
+                    <div className="relative">
+                        <h2 className='koulen text-white text__41 mb-3'>join our discord channel</h2>
+                        <div className="flex items-center gap-3 ml-[2rem]">
+                            <div className="flex items-center">
+                                <div className="w-[271px] h-[64px] -mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
+                                <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[52px] h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                                    <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
+                                    <span className="-skew-x-[40deg] relative z-[2]">
+                                        join BETA
+                                    </span>
+                                </a>
+                            </div>
+                            <div className="flex items-center">
+                                <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[32px] h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                                    <img src="./../images/Mask group.png" className="absolute left-0 top-0" alt="" />
+                                    <img src="./../images/discord.svg" className="-skew-x-[40deg] relative z-[2] w-[52px]" alt="" />
+                                </a>
+                                <div className="w-[271px] h-[64px] -ml-[14rem] bg-shadow-btn skew-x-[40deg]"></div>
+                            </div>
+                        </div>
+                        <img src="./../images/sec 7 - line.svg" className='absolute w-[106vh] -bottom-[3rem] left-0 -translate-x-[9%]' alt="" />
+                    </div>
+
+                    <div className="mt-[5rem]">
+                        <div className="flex items-center gap-[2rem]">
+                            <div className="">
+                                <h3 className='koulen text__32 text-white mb-3'>follow us</h3>
+                                <div className="flex items-center gap-[1rem]">
+                                    <a href="#!">
+                                        <img src="./../images/sos (1).svg" alt="" />
+                                    </a>
+                                    <div className="w-[1px] h-[12px] bg-white"></div>
+                                    <a href="#!">
+                                        <img src="./../images/sos (2).svg" alt="" />
+                                    </a>
+                                    <div className="w-[1px] h-[12px] bg-white"></div>
+                                    <a href="#!">
+                                        <img src="./../images/sos (3).svg" alt="" />
+                                    </a>
+                                    <div className="w-[1px] h-[12px] bg-white"></div>
+                                    <a href="#!">
+                                        <img src="./../images/sos (4).svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="">
+                                <h3 className='koulen text__32 text-white mb-3'>The Developer & Publisher</h3>
+                                <a href="#!" className='inline-block'>
+                                    <div className="flex items-center gap-[1rem]">
+                                        <img src="./../images/world (2).svg" alt="" />
+                                        <span className='koulen text__32 text-white'>enverstudio.com</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
