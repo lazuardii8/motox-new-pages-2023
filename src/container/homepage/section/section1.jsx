@@ -7,19 +7,21 @@ const Section1 = (props) => {
   return (
     <Fragment>
 
-      <img src="./../images/Vector (1).svg" className="absolute right-0 bottom-0 w-[168vh]" alt="" />
+      <img src="./../images/sdasdfsa.svg" className="absolute left-0 bottom-0 md:hidden w-full pointer-events-none hminSm700:-bottom-[8rem]" alt="" />
 
-      <div className="absolute w-full bottom-0 left-0 h-[90px] flex items-center justify-center" style={{ backgroundImage: "url('./../images/Frame 706117.svg')" }}>
+      <img src="./../images/Vector (1).svg" className="absolute right-0 bottom-0 w-[168vh] hidden md:block" alt="" />
+
+      <div className="absolute w-full bottom-0 left-0 h-[54px] md:h-[90px] flex items-center justify-center" style={{ backgroundImage: "url('./../images/Frame 706117.svg')" }}>
         <div className="container">
-          <div className="flex items-center justify-end gap-4">
-            <img src="./../images/ss (1).png" alt="" />
-            <img src="./../images/ss (3).png" alt="" />
-            <img src="./../images/ss (2).png" alt="" />
+          <div className="flex items-center justify-center md:justify-end gap-[2.5rem] md:gap-4">
+            <img src="./../images/ss (1).png" className="w-[40px] md:w-auto" alt="" />
+            <img src="./../images/ss (3).png" className="w-[40px] md:w-auto" alt="" />
+            <img src="./../images/ss (2).png" className="w-auto" alt="" />
           </div>
         </div>
       </div>
 
-      <div className="container relative z-[2] h-full">
+      <div className="container relative z-[2] h-full hidden md:block">
         <img src="./../images/Rectangle 22653.png" className="absolute w-[52vw] h-[56vh] hminlg700:w-[61vw] hminxl700:w-[46rem] hminxl900:w-[51rem] top-[54%] object-cover -translate-y-1/2 left-[27%] hminxl700:left-[24%]" alt="" />
         <div className="absolute bottom-0 left-[6rem] hminlg700:left-[9rem] lg:left-[13rem]">
           <img src="./../images/pose 5.png" className="w-[54vh]" alt="" />
@@ -62,7 +64,54 @@ const Section1 = (props) => {
         </div>
 
       </div>
-      <img src="./../images/Group 706219.svg" className="absolute left-0 bottom-0 w-[163vh] z-[2] pointer-events-none" alt="" />
+      <img src="./../images/Group 706219.svg" className="absolute left-0 bottom-0 w-[163vh] z-[2] pointer-events-none hidden md:block" alt="" />
+
+
+      <div className="container relative md:hidden h-full">
+        <div className="inline-block w-full h-full relative">
+
+          <div className="absolute w-full top-[2rem] left-0 top-0">
+            <div className="text-center relative z-[1] -mb-[5rem]">
+              <img src="./../images/Group 1502.png" className="mx-auto" alt="" />
+            </div>
+            <div className="p-[1rem] relative w-full border border-solid !border-[#FFFFFF26]">
+              <img src="./../images/rc (1).png" className="absolute left-0 top-0" alt="" />
+              <img src="./../images/rc (4).png" className="absolute right-0 top-0" alt="" />
+              <img src="./../images/rc (2).png" className="absolute left-0 bottom-0" alt="" />
+              <img src="./../images/rc (3).png" className="absolute right-0 bottom-0" alt="" />
+              <img src="./../images/Rectangle 22653.png" className="object-cover w-full h-[29vh] sm:h-[34vh]" alt="" />
+
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[1.5rem]">
+                <div className="btn-sosmed d-flex align-items-center justify-content-center position-relative z-2">
+                  <img src="./../images/Vector (2).png" className="w-[12px]" alt="" />
+                  <img src="./../images/Vector (2).png" className="w-[12px]" alt="" />
+                  <a href="https://discord.gg/AhJz97vxsw" target="_blank" className="btn__clip !h-[40px] !w-[40px] !p-[6px]">
+                    <DiscordIcon />
+                  </a>
+                  <a href="#!" className="btn__clip long koulen normal text__24 !h-[40px] !px-[20px] text-uppercase color__white ml-2 ml-lg-3"><span>buy now</span></a>
+                  <img src="./../images/Vector (2).png" className="right rotate-[180deg] w-[12px]" alt="" />
+                  <img src="./../images/Vector (2).png" className="right rotate-[180deg] w-[12px]" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="mt-3 flex items-center justify-between">
+              <div className="flex items-center cursor-pointer gap-2" onClick={() => window.fullpage_api.moveTo(2)}>
+                <img src="./../images/ic (1).svg" alt="" />
+                <span className="koulen text-white text__16">About the Game</span>
+              </div>
+              <div className="flex items-center cursor-pointer gap-2" onClick={props.toogleModal}>
+                <img src="./../images/ic (2).svg" alt="" />
+                <span className="koulen text-white text__16">watch trailer</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./../images/Group 706218.svg" className="absolute bottom-[calc(54px_+_0.5rem)] w-[33vh] xx:w-[36vh] ss:w-[32vh] left-1/2 -translate-x-1/2" alt="" />
+
+        </div>
+      </div>
+
+
 
     </Fragment>
   );

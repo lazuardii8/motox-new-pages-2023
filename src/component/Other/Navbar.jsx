@@ -13,7 +13,6 @@ const Navbar = (props) => {
             <div className={"wrapper__side-nav-mobile d-flex d-lg-none " + (toogleMenu ? "active" : "")}>
                 <div className="d-flex flex-wrap w-100 position-relative navwarap">
                     <div className="w-100 position-relative">
-                        <SecBG />
                         <div className="d-flex align-items-center justify-content-between mb-4 position-relative z-2">
                             <a
                                 onClick={() => {
