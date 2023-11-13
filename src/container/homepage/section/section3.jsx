@@ -23,8 +23,8 @@ const Section3 = (props) => {
     };
     const dataTracks = [
         {
-            title: `Tracks: Dead <br /> Forest`,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br /> heart-pounding excitement of real motocross racing. Our <br /> game's realistic tracks offer an authentic experience <br /> with challenging terrain`,
+            title: `Tracks: Dead <br class="hidden sm:block" /> Forest`,
+            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block" /> with challenging terrain`,
             background: "./../images/sec 3 - layer 2.svg",
             track: "./../images/map - 1.svg",
             trackTitle: "Dead Forest",
@@ -39,8 +39,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: <br /> Grasslands`,
-            desc: `Experience the thrill of the Grasslands track, where <br /> speed meets nature's challenges. Are you ready to <br /> conquer this dynamic motocross terrain?`,
+            title: `Tracks: <br class="hidden sm:block" /> Grasslands`,
+            desc: `Experience the thrill of the Grasslands track, where <br class="hidden sm:block" /> speed meets nature's challenges. Are you ready to <br class="hidden sm:block" /> conquer this dynamic motocross terrain?`,
             background: "./../images/bgtrack2.svg",
             track: "./../images/track2.svg",
             trackTitle: "Grasslands ",
@@ -55,8 +55,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: Emerald <br /> Desert   `,
-            desc: `Prepare for an adrenaline-fueled ride through the <br /> Emerald Desert track. Master the dunes, conquer the <br /> heat, and make your mark in the heart of the desert!`,
+            title: `Tracks: Emerald <br class="hidden sm:block" /> Desert   `,
+            desc: `Prepare for an adrenaline-fueled ride through the <br class="hidden sm:block" /> Emerald Desert track. Master the dunes, conquer the <br class="hidden sm:block" /> heat, and make your mark in the heart of the desert!`,
             background: "./../images/bgtrack3.svg",
             track: "./../images/track3.svg",
             trackTitle: "Emerald Desert   ",
@@ -71,8 +71,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: <br /> California Beach`,
-            desc: `Hit the sandy shores of the California Beach track for <br /> high-speed motocross action. Sun, surf, and intense <br /> racing – it's the ultimate beachside thrill!`,
+            title: `Tracks: <br class="hidden sm:block" /> California Beach`,
+            desc: `Hit the sandy shores of the California Beach track for <br class="hidden sm:block" /> high-speed motocross action. Sun, surf, and intense <br class="hidden sm:block" /> racing – it's the ultimate beachside thrill!`,
             background: "./../images/bgtrack 4.svg",
             track: "./../images/track4.svg",
             trackTitle: "Emerald Desert",
@@ -87,8 +87,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: <br /> Supercross  `,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br /> heart-pounding excitement of real motocross racing. Our <br /> game's realistic tracks offer an authentic experience <br /> with challenging terrain`,
+            title: `Tracks: <br class="hidden sm:block" /> Supercross  `,
+            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block" /> with challenging terrain`,
             background: "./../images/bgtrack 5.svg",
             track: "./../images/track5.svg",
             trackTitle: "Emerald Desert",
@@ -104,7 +104,7 @@ const Section3 = (props) => {
         },
         {
             title: `Tracks: Canyon  `,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br /> heart-pounding excitement of real motocross racing. Our <br /> game's realistic tracks offer an authentic experience <br /> with challenging terrain`,
+            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br /> with challenging terrain`,
             background: "./../images/bgtrack6.svg",
             track: "./../images/track 6.svg",
             trackTitle: "Emerald Desert",
@@ -129,43 +129,74 @@ const Section3 = (props) => {
                             return <div>
                                 <div className="w-full wrapper__h-100-screan relative overflow-hidden">
                                     <img src="./../images/sec 3 - line.svg" className='absolute right-0 top-0 h-full' alt="" />
-                                    <img src={obj.background} className='absolute left-0 -bottom-[17vh] w-full h-full object-cover' alt="" />
+                                    <img src={obj.background} className='absolute left-0 -bottom-[4vh] md:-bottom-[17vh] hminxl900:-bottom-[7vh] w-full h-full object-cover' alt="" />
 
                                     <div className="container h-full relative">
-                                        <div className="absolute left-0 bottom-[2rem]">
+                                        <div className="absolute left-[1rem] xl:left-0 bottom-[2rem]">
                                             <h2 className='koulen text-white text__64 mb-2' dangerouslySetInnerHTML={{
                                                 __html: obj.title
                                             }}></h2>
                                             <p className='text__20 text-white' dangerouslySetInnerHTML={{
                                                 __html: obj.desc
                                             }}></p>
+
+                                            <div className="mt-3 md:hidden">
+                                                <div className="flex items-center gap-3 ml-[2rem]">
+                                                    <div className="flex items-center">
+                                                        <div className="w-[200px] lg:w-[271px] h-[48px] lg:h-[56px] -mr-[11rem] lg:-mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
+                                                        <div onClick={previous} className="cursor-pointer inline-block relative z-2 text-white koulen text__32 uppercase  px-[30px] xx:px-[30px] lg:px-[52px] h-[48px] lg:h-[56px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                                                            <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
+                                                            <span className="-skew-x-[40deg] relative z-[2]">
+                                                                <span className="flex items-center gap-2">
+                                                                    <img src="./../images/arrow.svg" alt="" />
+                                                                    <span>prev</span>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex items-center">
+                                                        <div onClick={next} className="cursor-pointer inline-block relative z-2 text-white koulen text__32 uppercase  px-[30px] xx:px-[30px] lg:px-[52px] h-[48px] lg:h-[56px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                                                            <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
+                                                            <span className="-skew-x-[40deg] relative z-[2]">
+                                                                <span className="flex items-center gap-2">
+                                                                    <span>next</span>
+                                                                    <img src="./../images/arrow.svg" className='rotate-[180deg]' alt="" />
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                        <div className="w-[200px] lg:w-[271px] h-[48px] lg:h-[56px] -ml-[11rem] lg:-ml-[14rem] bg-shadow-btn skew-x-[40deg]"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div className="absolute right-[4rem] top-[14vh] w-[67vh]">
+                                        <img src={obj.track} className='md:!hidden absolute left-1/2 -translate-x-1/2 top-[26%] hminMaxSm700:top-[35%] hminMaxSm800:top-[40%] hminMaxSm900:top-[50%] -translate-y-1/2 ss:w-auto w-[92%]' alt="" />
+
+                                        <div className="absolute -right-[3rem] lg:right-[4rem] top-[10vh] lg:top-[14vh] hminxl800:top-[19vh] w-[23rem] lg:w-[26rem] hminxl800:w-[29rem] hminxl900:w-[32.5rem] hidden md:block">
                                             <div className="relative inline-block h-fit">
                                                 <img src="./../images/Group 706193.svg" className='absolute object-left-top object-cover left-0 top-0 w-full h-full' alt="" />
-                                                <div className="relative pl-[1rem] pb-[1rem] pr-[5rem] pt-[0.8rem]">
+                                                <div className="relative pl-[1rem] pb-[2rem] pr-[5rem] pt-[0.8rem]">
                                                     <img src={obj.track} className='h-[23vh] w-full' alt="" />
-                                                    <div className="pb-[1rem] pt-[0.5rem] pr-[4rem]">
-                                                        <h5 className='koulen text__24 mb-2'>{obj.trackTitle}</h5>
-                                                        <p className='text__10 mb-3 opacity-70 clamp-4'>{obj.trackDesc}</p>
+                                                    <div className="pb-[2rem] pt-[0.5rem] pr-[4rem]">
+                                                        <h5 className='koulen text__24 hminxl800:text-[28px] hminxl900:text-[32px] mb-2'>{obj.trackTitle}</h5>
+                                                        <p className='text__10 hminxl800:text-[12px] hminxl900:text-[14px] mb-3 opacity-70 clamp-4'>{obj.trackDesc}</p>
 
                                                         <div className="grid grid-cols-2 grid-rows-2 gap-2">
                                                             <div className="">
-                                                                <h5 className='koulen text__20 mb-2'>{obj.TData1}</h5>
-                                                                <p className='text__18 opacity-70'>{obj.SData1}</p>
+                                                                <h5 className='koulen text__20 hminxl800:text__[24px] hminxl900:text-[28px] mb-2'>{obj.TData1}</h5>
+                                                                <p className='text__18 hminxl800:text-[20px] hminxl900:text-[24px] opacity-70'>{obj.SData1}</p>
                                                             </div>
                                                             <div className="">
-                                                                <h5 className='koulen text__20 mb-2'>{obj.TData2}</h5>
-                                                                <p className='text__18 opacity-70'>{obj.sData2}</p>
+                                                                <h5 className='koulen text__20 hminxl800:text__[24px] hminxl900:text-[28px] mb-2'>{obj.TData2}</h5>
+                                                                <p className='text__18 hminxl800:text-[20px] hminxl900:text-[24px] opacity-70'>{obj.sData2}</p>
                                                             </div>
                                                             <div className="">
-                                                                <h5 className='koulen text__20 mb-2'>{obj.TData3}</h5>
-                                                                <p className='text__18 opacity-70'>{obj.sData3}</p>
+                                                                <h5 className='koulen text__20 hminxl800:text__[24px] hminxl900:text-[28px] mb-2'>{obj.TData3}</h5>
+                                                                <p className='text__18 hminxl800:text-[20px] hminxl900:text-[24px] opacity-70'>{obj.sData3}</p>
                                                             </div>
                                                             <div className="">
-                                                                <h5 className='koulen text__20 mb-2'>{obj.TData4}</h5>
-                                                                <p className='text__18 opacity-70'>{obj.sData4}</p>
+                                                                <h5 className='koulen text__20 hminxl800:text__[24px] hminxl900:text-[28px] mb-2'>{obj.TData4}</h5>
+                                                                <p className='text__18 hminxl800:text-[20px] hminxl900:text-[24px] opacity-70'>{obj.sData4}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -173,11 +204,11 @@ const Section3 = (props) => {
                                             </div>
                                         </div>
 
-                                        <div className="absolute right-0 bottom-[2rem]">
+                                        <div className="absolute right-0 bottom-[2rem] hidden md:block">
                                             <div className="flex items-center gap-3 ml-[2rem]">
                                                 <div className="flex items-center">
-                                                    <div className="w-[271px] h-[56px] -mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
-                                                    <div onClick={previous} className="cursor-pointer inline-block relative z-2 text-white koulen text__32 uppercase px-[52px] h-[56px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                                                    <div className="w-[200px] lg:w-[271px] h-[48px] lg:h-[56px] -mr-[11rem] lg:-mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
+                                                    <div onClick={previous} className="cursor-pointer inline-block relative z-2 text-white koulen text__32 uppercase  px-[30px] xx:px-[30px] lg:px-[52px] h-[48px] lg:h-[56px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
                                                         <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                                         <span className="-skew-x-[40deg] relative z-[2]">
                                                             <span className="flex items-center gap-2">
@@ -188,7 +219,7 @@ const Section3 = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="flex items-center">
-                                                    <div onClick={next} className="cursor-pointer inline-block relative z-2 text-white koulen text__32 uppercase px-[52px] h-[56px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                                                    <div onClick={next} className="cursor-pointer inline-block relative z-2 text-white koulen text__32 uppercase  px-[30px] xx:px-[30px] lg:px-[52px] h-[48px] lg:h-[56px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
                                                         <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                                         <span className="-skew-x-[40deg] relative z-[2]">
                                                             <span className="flex items-center gap-2">
@@ -197,7 +228,7 @@ const Section3 = (props) => {
                                                             </span>
                                                         </span>
                                                     </div>
-                                                    <div className="w-[271px] h-[56px] -ml-[14rem] bg-shadow-btn skew-x-[40deg]"></div>
+                                                    <div className="w-[200px] lg:w-[271px] h-[48px] lg:h-[56px] -ml-[11rem] lg:-ml-[14rem] bg-shadow-btn skew-x-[40deg]"></div>
                                                 </div>
                                             </div>
                                         </div>
