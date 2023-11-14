@@ -5723,7 +5723,7 @@ h5 {
   position: fixed !important;
   width: 100%;
   left: 0;
-  top: 0;
+  top: -100rem;
   background-color: transparent !important;
 }
 .wrapper__navbar-menu ul {

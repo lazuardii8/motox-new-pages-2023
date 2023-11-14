@@ -5,12 +5,16 @@ const Section3 = (props) => {
     const settings = {
         dots: false,
         arrows: false,
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipe: false,
         switouchMovepe: false,
         draggable: false,
+        pauseOnHover: false,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
     };
 
     const slider = useRef();
