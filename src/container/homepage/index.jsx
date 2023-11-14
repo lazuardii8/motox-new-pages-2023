@@ -79,7 +79,7 @@ export default class index extends Component {
     const anchors = [];
     return (
       <Fragment>
-        
+
         <div className={"wrapper__modal-full-video " + (this.state.isOpen ? "active" : "")}>
           <div className="wrap">
             <div className="close pointer" onClick={this.toogleModal}>
@@ -126,6 +126,7 @@ export default class index extends Component {
                 <div id="fullpage-wrapper position-relative">
                   <div className="section bg__black position-relative overflow-hidden">
                     <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                    <div className="bgWrap absolute z-[9999] w-full h-full left-0 top-0 bg-black transition-all duration-500 pointer-events-none"></div>
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>

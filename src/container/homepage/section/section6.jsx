@@ -3,7 +3,25 @@ import React, { Fragment } from 'react'
 const section6 = (props) => {
     return (
         <Fragment>
-            <img src="./../images/Screenshot 2023-11-05 at 5.36 1.png" className='w-full h-full absolute left-0 top-0 object-cover' alt="" />
+            {/* <img src="./../images/Screenshot 2023-11-05 at 5.36 1.png" className='w-full h-full absolute left-0 top-0 object-cover' alt="" /> */}
+
+            <video
+                data-keepplaying
+                // poster="./../images/Rectangle 22653.png"
+                className='w-full h-full absolute left-0 top-0 object-cover'
+                autoPlay
+                controls={false}
+                loop
+                playsInline
+                preload
+                muted
+            >
+                <source
+                    src="https://dfpcevrzf8nxo.cloudfront.net/MotoX%20Web.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA0aDmFwLXNvdXRoZWFzdC0xIkcwRQIgGUlrKG%2BMhwl3p3FCwFx3BNjmu5OglxFg8K6elDERA1cCIQDWui6hhDCIzCbpM9JA2wKvcx6LoP714bNK9Xy0Z0lVRSrkAghWEAAaDDkyNjIwNjM3NzYzNiIMV736LVg5LwFOClZaKsECMMUePtFHUXkrbX9A85hZu4FF4Pm6SgyVlAUnE%2Fl4v4sZSQiSLnvxQ4DN9lvIufiETqHgNbHkiaPTdKeVCoatRBDim33w4Q7PihkDRE28NpWwWsqbzn2NXI4TVeberU8VSpQavXB8zCNW5bnN8%2FeGpcZE8Yx1UraXXjwe6t1imDHGPKSgR8RgXfcoWAkQ4U9rolNUv93%2Fw3%2BsIPeznrqeDqbtcIeZpO5UqCIHZa9wFs8e%2FwFttYOH1DefTuQlvv77VAHOZVDcuGVWvh18MKnYhZAs7ZE4K3mNHGta5CwX%2B7Ws2beaBlZaVKc%2FSRberhl2IBals9kJEj5pMvv%2BoGN7qWS5qd0q9B%2FUzaZyLNIPdsq5WuDj1c1rhZN%2Bibuc8pnL9ZFZal7O4ZB6opnl8rlX4uVD3PkcxS7%2BySLaV3gFnZ0MMM%2Fty6oGOrMCv7YbdvpNZa4aSi9ZGZ0ikwfotiwSqFv7oc%2BGAZum3g6JxG16dgLhI0wUPYcjMGaoqVs0bOjrjZp5WSSuN9EXyL6GiASKUqQbVeEO98hB1g4DE5rZbxoTposuqJPY9kuDpQFcxzu0K8vwvVR4g3sxHoAj8Gt4MMY6o5xvPvr7Fmm2z8ge1DqiKMhgTXbLTbujf%2FjWRoJdTshWUYLznAhZsXS1RQF%2BsCfepr1vzElo73fO2z2SPHq7jhUTkaLiW%2FSCXCTwtQr1s14kQqE7OxAxCRB57O53l%2F%2B4uRzHyipq6swSBnbYvVl63uoDBRZ06kHBUt6MRfxgDNHtNhxvkCVHzDPyxH1WdWpAEvkTAJ91fHVvrhJPr%2BXNIxqUASKfGZmVnzEI8zih72BW13KcDai9NTMjpw%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231114T042807Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA5PJRTX2SOYBU4CNP%2F20231114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ad8adc4a354991ab825858ed42ba1f8c78b53a3e6d4dd4befc18438968e59b7a"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
             <img src="./../images/sec 6 - layer 2.svg" className='absolute left-0 top-0 h-full object-cover' alt="" />
 
             <div className="container relative h-full">

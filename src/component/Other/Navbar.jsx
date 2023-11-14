@@ -79,7 +79,7 @@ const Navbar = (props) => {
                 </div>
             </div >
             <nav
-                className={"navbar navbar-expand-lg wrapper__navbar fixed position-relative z-2 " + (toogleMenu ? "active" : "")}
+                className={"navbar navbar-expand-lg wrapper__navbar transition-all duration-500 fixed position-relative z-2 " + (toogleMenu ? "active" : "")}
             >
                 <div className="container position-relative">
                     <img src="./../images/Vector 317.png" className="images__nav-line-1 md:w-[44vh] xl:w-auto" alt="" />
