@@ -28,12 +28,10 @@ const Mobile = (props) => {
 
         TweenMax.set(coverVideo, {
             css: {
-                width: "100vh",
-                height: "100vh",
-                left: "0",
-                top: "0",
-                position: "fixed",
-                scale: 1.2,
+                width: window.innerWidth + 45,
+                height: window.innerHeight + 45,
+                x: "-3rem",
+                y: "-17%"
             },
         });
 
@@ -106,16 +104,13 @@ const Mobile = (props) => {
             }),
             TweenLite.to(coverVideo, 2, {
                 css: {
-                    width: "100vh",
-                    height: "100vh",
-                    left: "0",
-                    top: "0",
-                    position: "fixed",
-                    scale: 1.2,
-                    ease: Circ.easeOut
+                    width: window.innerWidth + 45,
+                    height: window.innerHeight + 45,
+                    x: "-3rem",
+                    y: "-17%"
                 },
                 onComplete: function () {
-                    TweenLite.set(coverVideo, { scale: 1, clearProps: "all", ease: Circ.easeOut });
+                    TweenLite.set(coverVideo, { clearProps: "all", ease: Circ.easeOut });
                 }
             }),
         ]);
@@ -207,33 +202,28 @@ const Mobile = (props) => {
                         <div className="logoCover transition-all duration-500 text-center relative z-[1] -mb-[5rem]">
                             <img src="./../images/Group 1502.png" className="mx-auto" alt="" />
                         </div>
-                        <div className="p-[1rem] relative w-full border border-solid !border-[#FFFFFF26] lineVideo transition-all duration-500">
+                        <div className="coverVideo transition-all duration-500 p-[1rem] relative w-full border border-solid !border-[#FFFFFF26] lineVideo transition-all duration-500">
                             <img src="./../images/rc (1).png" className="absolute left-0 top-0" alt="" />
                             <img src="./../images/rc (4).png" className="absolute right-0 top-0" alt="" />
                             <img src="./../images/rc (2).png" className="absolute left-0 bottom-0" alt="" />
                             <img src="./../images/rc (3).png" className="absolute right-0 bottom-0" alt="" />
-                            {/* <img src="./../images/Rectangle 22653.png" className="coverVideo transition-all duration-500 object-cover w-full h-[29vh] sm:h-[34vh]" alt="" /> */}
-                            <div className="coverVideo transition-all duration-500 w-full h-[29vh] sm:h-[34vh]">
-                                <div className="relative w-full h-full">
-                                    <video
-                                        data-keepplaying
-                                        // poster="./../images/Rectangle 22653.png"
-                                        className="absolute w-full h-full left-0 top-0 object-cover"
-                                        autoPlay
-                                        controls={false}
-                                        loop
-                                        playsInline
-                                        preload
-                                        muted
-                                    >
-                                        <source
-                                            src="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
-                                            type="video/mp4"
-                                        />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
+                            <video
+                                data-keepplaying
+                                // poster="./../images/Rectangle 22653.png"
+                                className="w-full h-[29vh] sm:h-[34vh] w-full h-full object-cover"
+                                autoPlay
+                                controls={false}
+                                loop
+                                playsInline
+                                preload
+                                muted
+                            >
+                                <source
+                                    src="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
 
                             <div className="btnAction transition-all duration-500 absolute left-1/2 -translate-x-1/2 bottom-[1.5rem]">
                                 <div className="btn-sosmed d-flex align-items-center justify-content-center position-relative z-2">
