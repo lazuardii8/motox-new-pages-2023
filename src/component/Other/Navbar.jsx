@@ -13,21 +13,7 @@ const Navbar = (props) => {
             <div className={"wrapper__side-nav-mobile d-flex d-lg-none " + (toogleMenu ? "active" : "")}>
                 <div className="d-flex flex-wrap w-100 position-relative navwarap">
                     <div className="w-100 position-relative">
-                        <div className="d-flex align-items-center justify-content-between mb-4 position-relative z-2">
-                            <a
-                                onClick={() => {
-                                    window.fullpage_api.moveTo(1)
-                                    setToogleMenu(!toogleMenu)
-                                }}
-                                class="pointer navbar-brand font__size--20 normal color__white wrapper__center-nav"
-                            >
-                                <img src="./../images/Group 705849.png" className="images__logo" alt="" />
-                            </a>
-
-
-                            <img src="./../images/Frame 705600.png" onClick={() => setToogleMenu(!toogleMenu)} className="pointer" alt="" />
-                        </div>
-                        <div className="menu text-center position-relative z-2">
+                        <div className="menu text-center position-relative z-2 mt-5">
                             <a onClick={() => {
                                 window.fullpage_api.moveTo(1)
                                 setToogleMenu(!toogleMenu)
