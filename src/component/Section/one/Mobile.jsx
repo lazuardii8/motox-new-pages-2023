@@ -183,8 +183,8 @@ const Mobile = (props) => {
 
     return (
         <Fragment>
-            <img src="./../images/sdasdfsa.svg" className="lineLeft transition-all duration-500 absolute left-0 bottom-0 md:hidden w-full pointer-events-none hminSm700:-bottom-[8rem]" alt="" />
-            <div className="sosmedBottom transition-all duration-500 absolute w-full bottom-0 left-0 h-[54px] md:h-[90px]">
+            <img src="./../images/jfsbkdfs.svg" className="lineLeft transition-all duration-500 absolute left-0 bottom-0 md:hidden w-full pointer-events-none z-[1]" alt="" />
+            <div className="sosmedBottom transition-all duration-500 z-[2] absolute w-full bottom-0 left-0 h-[54px] md:h-[90px]">
                 <div className="w-full h-full flex items-center justify-center" style={{ backgroundImage: "url('./../images/Frame 706117.svg')" }}>
                     <div className="container">
                         <div className="flex items-center justify-center md:justify-end gap-[2.5rem] md:gap-4">
@@ -198,7 +198,7 @@ const Mobile = (props) => {
             <div className="container relative md:hidden h-full">
                 <div className="inline-block w-full h-full relative">
 
-                    <div className="absolute w-full top-[2rem] left-0 top-0">
+                    <div className="absolute w-full top-[2rem] hminMaxSm900:top-[5rem] left-0 top-0">
                         <div className="logoCover transition-all duration-500 text-center relative z-[1] -mb-[5rem]">
                             <img src="./../images/Group 1502.png" className="mx-auto" alt="" />
                         </div>
@@ -254,7 +254,7 @@ const Mobile = (props) => {
                         </div>
                     </div>
 
-                    <img src="./../images/Group 706218.svg" className="motoContent transition-all duration-500 absolute bottom-[calc(54px_+_0.5rem)] w-[33vh] xx:w-[36vh] ss:w-[32vh] left-1/2 -translate-x-1/2" alt="" />
+                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 w-[33vh] sm: left-1/2 hminMaxSm700:w-[30vh] hminMaxSm800:w-[33vh] -translate-x-1/2" alt="" />
 
                 </div>
             </div>
