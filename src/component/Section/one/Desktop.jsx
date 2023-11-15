@@ -226,7 +226,7 @@ const Desktop = (props) => {
             </video>
             <div className="container relative z-[2] h-full hidden md:block">
                 <div className="character transition-all duration-500 absolute bottom-0 left-[6rem] hminlg700:left-[9rem] hminlg900:left-[4rem] lg:left-[13rem]">
-                    <img src="./../images/pose 5.png" className="w-[54vh]" alt="" />
+                    <img src="./../images/pose 5.png" className="w-[59vh]" alt="" />
                 </div>
                 {/* <img src="./../images/Rectangle 22580.svg" className="absolute left-0 top-0" alt="" /> */}
 
@@ -266,7 +266,7 @@ const Desktop = (props) => {
                 </div>
 
             </div>
-            <img src="./../images/Group 706219.svg" className="lineLeft transition-all duration-500 absolute left-0 bottom-0 w-[163vh] z-[2] pointer-events-none hidden md:block" alt="" />
+            <img src="./../images/jfsbkdfs.svg" className="lineLeft transition-all duration-500 absolute left-0 bottom-0 w-[120vh] z-[2] pointer-events-none hidden md:block" alt="" />
         </Fragment>
     )
 }
