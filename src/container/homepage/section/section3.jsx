@@ -13,8 +13,8 @@ const Section3 = (props) => {
         draggable: false,
         pauseOnHover: false,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 3000,
+        autoplaySpeed: 3000,
     };
 
     const slider = useRef();
