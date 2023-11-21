@@ -22,15 +22,15 @@ const Mobile = (props) => {
         const motoContent = $(".motoContent")
         const sosmedBottom = $(".sosmedBottom")
 
-        // / inisialisaisi
-        const tl = new TimelineMax({
-            repeat: 0, delay: 1.5, onComplete: () => {
-                window.fullpage_api.setAllowScrolling(true);
-            }
-        });
-
+        
         videoLoad.current.onplaying = function () {
             if (playing) {
+                // / inisialisaisi
+                const tl = new TimelineMax({
+                    repeat: 0, delay: 1.5, onComplete: () => {
+                        window.fullpage_api.setAllowScrolling(true);
+                    }
+                });
 
                 TweenMax.set(coverVideo, {
                     css: {
