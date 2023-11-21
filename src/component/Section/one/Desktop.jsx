@@ -22,6 +22,33 @@ const Desktop = (props) => {
         const textMoto = $(".textMoto")
         const sosmedBottom = $(".sosmedBottom")
 
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+            if ("IntersectionObserver" in window) {
+                var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (video) {
+                        if (video.isIntersecting) {
+                            for (var source in video.target.children) {
+                                var videoSource = video.target.children[source];
+                                if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                                    videoSource.src = videoSource.dataset.src;
+                                }
+                            }
+
+                            video.target.load();
+                            video.target.classList.remove("lazy");
+                            lazyVideoObserver.unobserve(video.target);
+                        }
+                    });
+                });
+
+                lazyVideos.forEach(function (lazyVideo) {
+                    lazyVideoObserver.observe(lazyVideo);
+                });
+            }
+        });
+
 
         videoLoad.current.onplaying = function () {
             if (playing) {
@@ -250,7 +277,7 @@ const Desktop = (props) => {
                 ref={videoLoad}
                 data-keepplaying
                 // poster="./../images/Rectangle 22653.png"
-                className="coverVideo absolute w-[52vw] h-[56vh] hminlg700:w-[61vw] hminxl700:w-[46rem] hminxl900:w-[51rem] top-[54%] object-cover -translate-y-1/2 left-[27%] hminxl700:left-[24%] hminxl700:left-[29%] transition-all duration-500"
+                className="coverVideo lazy absolute w-[52vw] h-[56vh] hminlg700:w-[61vw] hminxl700:w-[46rem] hminxl900:w-[51rem] top-[54%] object-cover -translate-y-1/2 left-[27%] hminxl700:left-[24%] hminxl700:left-[29%] transition-all duration-500"
                 autoPlay
                 controls={false}
                 loop
