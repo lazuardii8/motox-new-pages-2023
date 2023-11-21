@@ -4,7 +4,7 @@ const section4 = (props) => {
     return (
         <Fragment>
             <img src="./../images/sec4 - layer 3.svg" className='absolute left-0 bottom-0 md:bottom-auto md:top-0 w-full' alt="" />
-            <img src="./../images/sec4 - layer 2.png" className='absolute left-1/2 md:left-auto -translate-x-1/2 md:translate-x-[initial] md:-right-[10rem] lg:right-0 bottom-0 w-[58vh] hminMaxSm800:w-[62vh] md:w-[103vh] hminMaxSm800:max-w-[116%] hminMaxSm800:w-[113vw] hminMaxSm800:max-w-[135%] hminMaxSm800:left-[68%] hminMaxSm900:w-[112vw]' alt="" />
+            <img src="./../images/sec4 - layer 2.png" className='absolute left-1/2 md:left-auto -translate-x-1/2 md:translate-x-[initial] md:-right-[10rem] lg:right-0 bottom-0 hmaxMaxSm600:w-[48vh] hminMaxSm600:w-[58vh] hminMaxSm800:w-[62vh] md:w-[103vh] hminMaxSm800:max-w-[116%] hminMaxSm800:w-[113vw] hminMaxSm800:max-w-[135%] hminMaxSm800:left-[68%] hminMaxSm900:w-[112vw]' alt="" />
             <img src="./../images/sec4 - layer 1.svg" className='absolute right-0 bottom-0 w-[106vh]' alt="" />
 
             <div className="container relative h-full">
