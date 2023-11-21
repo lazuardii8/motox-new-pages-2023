@@ -28,9 +28,12 @@ module.exports = {
       hminSm800: { raw: "((min-height: 800px) and (min-width: 576px))" },
 
       hminMaxSm: { raw: "(max-width: 576px)" },
+      hminMaxSm600: { raw: "((min-height: 601px) and (max-width: 570px))" },
       hminMaxSm700: { raw: "((min-height: 700px) and (max-width: 570px))" },
       hminMaxSm800: { raw: "((min-height: 800px) and (max-width: 570px))" },
       hminMaxSm900: { raw: "((min-height: 900px) and (max-width: 570px))" },
+      
+      hmaxMaxSm600: { raw: "((max-height: 600px) and (max-width: 570px))" },
 
       hmin700: { raw: "(min-height: 700px)" },
       hmin800: { raw: "(min-height: 800px)" },

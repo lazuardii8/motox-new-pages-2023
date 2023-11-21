@@ -35,7 +35,6 @@ export default class index extends Component {
   onLeave(origin, destination, direction) {
     // console.log("Leaving section " + origin.index);
     this.solveSkipPages(origin, destination, direction)
-    console.log(destination.index)
     if (destination.index == 5) {
       TweenMax.set(".bg6", {
         css: {
