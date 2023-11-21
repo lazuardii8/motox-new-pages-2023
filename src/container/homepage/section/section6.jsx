@@ -6,7 +6,7 @@ const section6 = (props) => {
             {/* <img src="./../images/Screenshot 2023-11-05 at 5.36 1.png" className='w-full h-full absolute left-0 top-0 object-cover' alt="" /> */}
 
             <video
-                data-keepplaying
+                // data-keepplaying
                 // poster="./../images/Rectangle 22653.png"
                 className='w-full h-full absolute left-0 top-0 object-cover z-[1]'
                 autoPlay
