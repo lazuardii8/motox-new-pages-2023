@@ -1,14 +1,19 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, Suspense, useEffect } from "react";
 import $ from "jquery";
-import Desktop from "../../../component/Section/one/Desktop";
-import Mobile from "../../../component/Section/one/Mobile";
+
+const Desktop = React.lazy(() => import('../../../component/Section/one/Desktop'));
+const Mobile = React.lazy(() => import('../../../component/Section/one/Mobile'));
 
 const Section1 = (props) => {
   const showScreen = () => {
     if ($(window).width() >= 768) {
-      return <Desktop toogleModal={props.toogleModal} />
+      return <Suspense fallback={<div>Loading...</div>}>
+        <Desktop toogleModal={props.toogleModal} />
+      </Suspense>
     } else {
-      return <Mobile toogleModal={props.toogleModal} />
+      return <Suspense fallback={<div>Loading...</div>}>
+        <Mobile toogleModal={props.toogleModal} />
+      </Suspense>
     }
   }
   return (

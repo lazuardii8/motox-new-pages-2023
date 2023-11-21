@@ -11,7 +11,7 @@ const section4 = (props) => {
                 <div className="absolute left-[1rem] xl:left-0 top-[14vh] md:top-[26vh]">
                     <h5 className='text__20 uppercase text-[#F43329] mb-2'>START YOUR JOURNEY </h5>
                     <h2 className='koulen text-white text__64 mb-2'>Multiplayer</h2>
-                    <p className='text__20 text-white'>Race, compete, and conquer with friends and players <br className='hidden ss:block' /> worldwide in our exhilarating multiplayer mode. It's time to <br className='hidden ss:block' /> prove your motocross prowess on a global stage!</p>
+                    <p className='text__20 text-white  opacity-70'>Race, compete, and conquer with friends and players <br className='hidden ss:block' /> worldwide in our exhilarating multiplayer mode. It's time to <br className='hidden ss:block' /> prove your motocross prowess on a global stage!</p>
                     <div className="flex items-center gap-3 mt-4 ml-[1rem]">
                         <div className="flex items-center">
                             <div className="w-[271px] h-[48px] xs:h-[64px] -mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>

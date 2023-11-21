@@ -13,8 +13,9 @@ const Section3 = (props) => {
         draggable: false,
         pauseOnHover: false,
         autoplay: true,
-        speed: 3000,
-        autoplaySpeed: 3000,
+        // speed: 1,
+        speed: 1000,
+        autoplaySpeed: 2800,
     };
 
     const slider = useRef();
@@ -140,7 +141,7 @@ const Section3 = (props) => {
                                             <h2 className='koulen text-white text__64 mb-2' dangerouslySetInnerHTML={{
                                                 __html: obj.title
                                             }}></h2>
-                                            <p className='text__20 text-white' dangerouslySetInnerHTML={{
+                                            <p className='text__20 text-white  opacity-70' dangerouslySetInnerHTML={{
                                                 __html: obj.desc
                                             }}></p>
 
