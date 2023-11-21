@@ -3,6 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Navbar from "../../component/Other/Navbar";
 import { ClosedIcon, Sec4Line2Icon, Sec5Line2Icon, Sec5Line3Icon, Sec6Line4Icon, Sec7Line1Icon, Sec7Line2Icon } from "../../component/Svg/Svg";
 import ReactPlayer from "react-player";
+import { TweenMax } from "gsap";
 
 
 const Section1 = React.lazy(() => import('./section/section1'));
@@ -34,8 +35,27 @@ export default class index extends Component {
   onLeave(origin, destination, direction) {
     // console.log("Leaving section " + origin.index);
     this.solveSkipPages(origin, destination, direction)
-
-    // $(".onScroll").removeClass("aos-animate");
+    console.log(destination.index)
+    if (destination.index == 5) {
+      TweenMax.set(".bg6", {
+        css: {
+          y: -10,
+        },
+      });
+      TweenMax.to(".bg6", {
+        css: {
+          y: 0,
+        },
+      });
+      TweenMax.set(".ct6", {
+        css: {
+          y: -10,
+        },
+      });
+      TweenMax.to(".ct6", {
+        clearProps: "all",
+      });
+    }
   }
 
   afterRender(origin, destination, direction) {

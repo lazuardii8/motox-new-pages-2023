@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 
 const section6 = (props) => {
+    
     return (
         <Fragment>
             {/* <img src="./../images/Screenshot 2023-11-05 at 5.36 1.png" className='w-full h-full absolute left-0 top-0 object-cover' alt="" /> */}
 
             <video
-                // data-keepplaying
+                data-keepplaying
                 // poster="./../images/Rectangle 22653.png"
                 className='w-full h-full absolute left-0 top-0 object-cover z-[1]'
                 autoPlay
@@ -22,10 +23,10 @@ const section6 = (props) => {
                 />
                 Your browser does not support the video tag.
             </video>
-            <img src="./../images/sec 6 - layer 2.svg" className='absolute left-0 top-0 h-full object-cover z-[2]' alt="" />
+            <img src="./../images/sec 6 - layer 2.svg" className='bg6 absolute left-0 top-0 h-full object-cover z-[2]' alt="" />
 
             <div className="container relative h-full z-[4]">
-                <div className="absolute left-[1rem] xl:left-0 top-[50vh] hminMaxSm800:top-[58vh] md:top-[26vh]">
+                <div className="absolute ct6 left-[1rem] xl:left-0 top-[50vh] hminMaxSm800:top-[58vh] md:top-[26vh]">
                     <h5 className='text__20 uppercase text-[#F43329] mb-2'>START YOUR JOURNEY </h5>
                     <h2 className='koulen text-white text__64 mb-2'>open world</h2>
                     <p className='text__20 text-white'>Unleash your motocross adventure in a vast open world. <br className='hidden sm:block' /> Explore, race, and conquer diverse terrains at your own pace. <br className='hidden sm:block' /> Your motocross playground awaits!</p>
