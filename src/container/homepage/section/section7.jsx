@@ -106,9 +106,9 @@ const Section7 = (props) => {
                     </div>
 
                     <div className="mt-[5rem]">
-                        <div className="flex items-center gap-[2rem]">
+                        <div className="flex items-start gap-[2rem]">
                             <div className="">
-                                <h3 className='koulen text__32 text-white mb-3'>follow us</h3>
+                                <h3 className='koulen tracking-[1.5px] text__32 text-white mb-3'>follow us</h3>
                                 <div className="flex items-center gap-[1rem]">
                                     <a href="#!">
                                         <img src="./../images/sos (1).svg" alt="" />
@@ -128,11 +128,11 @@ const Section7 = (props) => {
                                 </div>
                             </div>
                             <div className="">
-                                <h3 className='koulen text__32 text-white mb-3'>The Developer & Publisher</h3>
-                                <a href="#!" className='inline-block'>
+                                <h3 className='koulen tracking-[1.5px] text__32 text-white mb-[5px] lines'>The Developer & Publisher</h3>
+                                <a href="https://www.enverstudio.com/" className='inline-block'>
                                     <div className="flex items-center gap-[1rem]">
                                         <img src="./../images/world (2).svg" alt="" />
-                                        <span className='koulen text__32 text-white'>enverstudio.com</span>
+                                        <span className='text__32 text-white'>enverstudio.com</span>
                                     </div>
                                 </a>
                             </div>

@@ -80,7 +80,7 @@ export default class index extends Component {
     return (
       <Fragment>
 
-        <div className={"wrapper__modal-full-video " + (this.state.isOpen ? "active" : "")}>
+        <div className={"wrapper__modal-full-video bg-black " + (this.state.isOpen ? "active" : "")}>
           <div className="wrap">
             <div className="close pointer" onClick={this.toogleModal}>
               <ClosedIcon />

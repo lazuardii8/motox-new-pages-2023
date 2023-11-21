@@ -22,9 +22,9 @@ const section6 = (props) => {
                 />
                 Your browser does not support the video tag.
             </video>
-            <img src="./../images/sec 6 - layer 2.svg" className='absolute left-0 top-0 h-full object-cover' alt="" />
+            <img src="./../images/sec 6 - layer 2.svg" className='absolute left-0 top-0 h-full object-cover z-1' alt="" />
 
-            <div className="container relative h-full">
+            <div className="container relative h-full z-2">
                 <div className="absolute left-[1rem] xl:left-0 top-[50vh] hminMaxSm800:top-[58vh] md:top-[26vh]">
                     <h5 className='text__20 uppercase text-[#F43329] mb-2'>START YOUR JOURNEY </h5>
                     <h2 className='koulen text-white text__64 mb-2'>open world</h2>

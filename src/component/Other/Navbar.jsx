@@ -24,7 +24,7 @@ const Navbar = (props) => {
                             <a onClick={() => {
                                 window.fullpage_api.moveTo(2)
                                 setToogleMenu(!toogleMenu)
-                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>ABOUT US</a>
+                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>MotoX</a>
 
 
                             <hr />
@@ -32,21 +32,21 @@ const Navbar = (props) => {
                                 window.fullpage_api.moveTo(3)
                                 setToogleMenu(!toogleMenu)
                             }}
-                                className={"pointer font__size--45 text-uppercase color__white koulen normal "}>Mechanics</a>
+                                className={"pointer font__size--45 text-uppercase color__white koulen normal "}>Tracks</a>
 
 
                             <hr />
                             <a onClick={() => {
                                 window.fullpage_api.moveTo(4)
                                 setToogleMenu(!toogleMenu)
-                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>CUSTOM</a>
+                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>Multiplayer</a>
 
 
                             <hr />
                             <a onClick={() => {
                                 window.fullpage_api.moveTo(5)
                                 setToogleMenu(!toogleMenu)
-                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>Player</a>
+                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>Career</a>
                             <hr />
                             <a onClick={() => {
                                 window.fullpage_api.moveTo(6)
@@ -56,7 +56,7 @@ const Navbar = (props) => {
                             <a onClick={() => {
                                 window.fullpage_api.moveTo(7)
                                 setToogleMenu(!toogleMenu)
-                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>EVENTS</a>
+                            }} className={"pointer font__size--45 text-uppercase color__white koulen normal "}>community</a>
 
 
                         </div>
@@ -68,7 +68,12 @@ const Navbar = (props) => {
                 className={"navbar navbar-expand-lg wrapper__navbar transition-all duration-500 fixed position-relative z-2 " + (toogleMenu ? "active" : "")}
             >
                 <div className="container position-relative">
-                    <img src="./../images/Vector 317.png" className="images__nav-line-1 md:w-[44vh] xl:w-auto" alt="" />
+                    {/* <img src="./../images/Vector 317.png" className="images__nav-line-1 md:w-[44vh] xl:w-auto" alt="" /> */}
+                    <div className="images__nav-line-1 md:w-[44vh] xl:w-auto">
+                        <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 379 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="nav-p-1" d="M0 22H207.5L228.5 1H378.5" stroke="#FC003C" stroke-width="2" />
+                        </svg>
+                    </div>
                     <a
                         onClick={() => window.fullpage_api.moveTo(1)}
                         class={"pointer navbar-brand font__size--18 text__18-1024 normal "}
@@ -99,7 +104,7 @@ const Navbar = (props) => {
                                     onClick={() => window.fullpage_api.moveTo(2)}
                                     class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 2 ? "bold" : "opacity__4 normal")}
                                 >
-                                    ABOUT US
+                                    MotoX
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -107,7 +112,7 @@ const Navbar = (props) => {
                                     onClick={() => window.fullpage_api.moveTo(3)}
                                     class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 3 ? "bold" : "opacity__4 normal")}
                                 >
-                                    Mechanics
+                                    Tracks
                                 </a>
 
 
@@ -117,7 +122,7 @@ const Navbar = (props) => {
                                     onClick={() => window.fullpage_api.moveTo(4)}
                                     class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 4 ? "bold" : "opacity__4 normal")}
                                 >
-                                    CUSTOM
+                                    Multiplayer
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -125,7 +130,7 @@ const Navbar = (props) => {
                                     onClick={() => window.fullpage_api.moveTo(5)}
                                     class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 5 ? "bold" : "opacity__4 normal")}
                                 >
-                                    Player
+                                    Career
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -141,7 +146,7 @@ const Navbar = (props) => {
                                     onClick={() => window.fullpage_api.moveTo(7)}
                                     class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 7 ? "bold" : "opacity__4 normal")}
                                 >
-                                    EVENTS
+                                    community
                                 </a>
                             </li>
                         </ul>
