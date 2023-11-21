@@ -12,7 +12,7 @@ const Section7 = (props) => {
                 <h2 className='koulen text__95 text-white mb-[4rem] absolute top-[12vh] text-center w-full md:hidden'>connect with us!</h2>
 
 
-                <div className="absolute md:hidden w-full left-1/2 -translate-x-1/2 hminMaxSm:top-[40%] hminMaxSm700:top-[53vh] hminMaxSm800:top-[56vh] hminMaxSm900:top-[60vh]">
+                <div className="absolute md:hidden w-full left-1/2 -translate-x-1/2 hminMaxSm:top-[51%] hminMaxSm700:top-[53vh] hminMaxSm800:top-[56vh] hminMaxSm900:top-[60vh]">
                     <div className="container relative text-center">
                         <div className="inline-block">
                             <h2 className='koulen text-white text__41 mb-3 text-left'>join our discord channel</h2>
