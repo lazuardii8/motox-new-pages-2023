@@ -5,7 +5,7 @@ const section6 = (props) => {
         <Fragment>
             {/* <img src="./../images/Screenshot 2023-11-05 at 5.36 1.png" className='w-full h-full absolute left-0 top-0 object-cover' alt="" /> */}
 
-            <video
+            {/* <video
                 data-keepplaying
                 // poster="./../images/Rectangle 22653.png"
                 className='w-full h-full absolute left-0 top-0 object-cover'
@@ -21,7 +21,7 @@ const section6 = (props) => {
                     type="video/mp4"
                 />
                 Your browser does not support the video tag.
-            </video>
+            </video> */}
             <img src="./../images/sec 6 - layer 2.svg" className='absolute left-0 top-0 h-full object-cover z-[1]' alt="" />
 
             <div className="container relative h-full z-[2]">
