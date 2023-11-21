@@ -39,7 +39,7 @@ export default class index extends Component {
     if (destination.index == 5) {
       TweenMax.set(".bg6", {
         css: {
-          y: -10,
+          y: -1,
         },
       });
       TweenMax.to(".bg6", {
@@ -49,7 +49,7 @@ export default class index extends Component {
       });
       TweenMax.set(".ct6", {
         css: {
-          y: -10,
+          y: -1,
         },
       });
       TweenMax.to(".ct6", {
