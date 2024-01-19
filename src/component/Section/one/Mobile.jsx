@@ -126,7 +126,7 @@ const Mobile = (props) => {
                 ]);
                 tl.add([
                     TweenLite.to(coverVideo, {
-                        delay: 2.5,
+                        delay: 1.5,
                     }),
                 ]);
                 tl.add([
