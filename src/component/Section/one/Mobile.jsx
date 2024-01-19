@@ -22,34 +22,81 @@ const Mobile = (props) => {
         const motoContent = $(".motoContent")
         const sosmedBottom = $(".sosmedBottom")
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-          
-            if ("IntersectionObserver" in window) {
-              var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(video) {
-                  if (video.isIntersecting) {
-                    for (var source in video.target.children) {
-                      var videoSource = video.target.children[source];
-                      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-                        videoSource.src = videoSource.dataset.src;
-                      }
-                    }
-          
-                    video.target.load();
-                    video.target.classList.remove("lazy");
-                    lazyVideoObserver.unobserve(video.target);
-                  }
-                });
-              });
-          
-              lazyVideos.forEach(function(lazyVideo) {
-                lazyVideoObserver.observe(lazyVideo);
-              });
-            }
-          });
 
-        
+            if ("IntersectionObserver" in window) {
+                var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (video) {
+                        if (video.isIntersecting) {
+                            for (var source in video.target.children) {
+                                var videoSource = video.target.children[source];
+                                if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                                    videoSource.src = videoSource.dataset.src;
+                                }
+                            }
+
+                            video.target.load();
+                            video.target.classList.remove("lazy");
+                            lazyVideoObserver.unobserve(video.target);
+                        }
+                    });
+                });
+
+                lazyVideos.forEach(function (lazyVideo) {
+                    lazyVideoObserver.observe(lazyVideo);
+                });
+            }
+        });
+
+        TweenMax.set(coverVideo, {
+            css: {
+                width: window.innerWidth + 45,
+                height: window.innerHeight + 45,
+                x: "-3rem",
+                y: "-17%"
+            },
+        });
+
+        TweenMax.set(logoCover, {
+            css: {
+                top: "50vh",
+                opacity: 0,
+            },
+        });
+
+        TweenMax.set(navbar, {
+            css: {
+                top: "-100rem"
+            },
+        });
+        TweenMax.set(lineLeft, {
+            css: {
+                left: "-100rem"
+            },
+        });
+        TweenMax.set(btnAction, {
+            css: {
+                opacity: 0,
+                bottom: "-10rem"
+            },
+        });
+        TweenMax.set(textAction, {
+            css: {
+                opacity: 0,
+                y: "5rem"
+            },
+        });
+        TweenMax.set(motoContent, {
+            css: {
+                left: "150%"
+            },
+        });
+        TweenMax.set(sosmedBottom, {
+            css: {
+                bottom: "-100rem"
+            },
+        });
         videoLoad.current.onplaying = function () {
             if (playing) {
                 // / inisialisaisi
@@ -59,54 +106,7 @@ const Mobile = (props) => {
                     }
                 });
 
-                TweenMax.set(coverVideo, {
-                    css: {
-                        width: window.innerWidth + 45,
-                        height: window.innerHeight + 45,
-                        x: "-3rem",
-                        y: "-17%"
-                    },
-                });
-
-                TweenMax.set(logoCover, {
-                    css: {
-                        top: "50vh",
-                        opacity: 0,
-                    },
-                });
-
-                TweenMax.set(navbar, {
-                    css: {
-                        top: "-100rem"
-                    },
-                });
-                TweenMax.set(lineLeft, {
-                    css: {
-                        left: "-100rem"
-                    },
-                });
-                TweenMax.set(btnAction, {
-                    css: {
-                        opacity: 0,
-                        bottom: "-10rem"
-                    },
-                });
-                TweenMax.set(textAction, {
-                    css: {
-                        opacity: 0,
-                        y: "5rem"
-                    },
-                });
-                TweenMax.set(motoContent, {
-                    css: {
-                        left: "150%"
-                    },
-                });
-                TweenMax.set(sosmedBottom, {
-                    css: {
-                        bottom: "-100rem"
-                    },
-                });
+              
 
 
                 tl.add([
@@ -119,32 +119,24 @@ const Mobile = (props) => {
                 tl.add([
                     TweenMax.to(logoCover, 1, {
                         css: {
-                            top: "40vh",
+                            top: "35vh",
                             opacity: 1,
                         },
                     }),
                 ]);
                 tl.add([
+                    TweenLite.to(coverVideo, {
+                        delay: 2.5,
+                    }),
+                ]);
+                tl.add([
                     TweenMax.to(logoCover, 1, {
                         css: {
-                            top: "25vh",
-                            opacity: 1,
-                            ease: Circ.easeOut
+                            top: 0,
                         },
-                        onComplete: function () {
-                            TweenLite.set(logoCover, { top: 0, ease: Circ.easeOut });
-                        }
                     }),
-                    TweenLite.to(coverVideo, 2, {
-                        css: {
-                            width: window.innerWidth + 45,
-                            height: window.innerHeight + 45,
-                            x: "-3rem",
-                            y: "-17%"
-                        },
-                        onComplete: function () {
-                            TweenLite.set(coverVideo, { clearProps: "all", ease: Circ.easeOut });
-                        }
+                    TweenLite.to(coverVideo, 1, {
+                        clearProps: "all", ease: Circ.easeOut
                     }),
                 ]);
 
@@ -230,7 +222,7 @@ const Mobile = (props) => {
                         }
                     }),
                 ]);
-
+                tl.duration(4).play()
                 playing = false;
             }
         }
@@ -318,7 +310,7 @@ const Mobile = (props) => {
                                     <a href="https://discord.gg/AhJz97vxsw" target="_blank" className="btn__clip !h-[40px] !w-[40px] !p-[6px]">
                                         <DiscordIcon />
                                     </a>
-                                    <a href="#!" className="btn__clip long koulen normal text__24 !h-[40px] !px-[20px] text-uppercase color__white ml-2 ml-lg-3"><span>buy now</span></a>
+                                    <a href="https://www.meta.com/experiences/5754014731339882/" target='_blank' className="btn__clip long koulen normal text__24 !h-[40px] !px-[20px] text-uppercase color__white ml-2 ml-lg-3"><span>buy now</span></a>
                                     <img src="./../images/Vector (2).png" className="right rotate-[180deg] w-[12px]" alt="" />
                                     <img src="./../images/Vector (2).png" className="right rotate-[180deg] w-[12px]" alt="" />
                                 </div>
