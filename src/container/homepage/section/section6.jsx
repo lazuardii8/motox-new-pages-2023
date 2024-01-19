@@ -33,7 +33,7 @@ const section6 = (props) => {
                     <div className="flex items-center gap-3 mt-4 ml-[1rem]">
                         <div className="flex items-center">
                             <div className="w-[271px] h-[48px] xs:h-[64px] -mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
-                            <a href="#!" className="inline-block flex-shrink-0 relative z-2 text-white koulen text__32 uppercase px-[30px] xx:px-[36px] ss:px-[52px] h-[48px] xs:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                            <a href="https://www.meta.com/experiences/5754014731339882/" target='_blank' className="inline-block flex-shrink-0 relative z-2 text-white koulen text__32 uppercase px-[30px] xx:px-[36px] ss:px-[52px] h-[48px] xs:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
                                 <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                 <span className="-skew-x-[40deg] relative z-[2]">
                                     join BETA
@@ -41,7 +41,7 @@ const section6 = (props) => {
                             </a>
                         </div>
                         <div className="flex items-center">
-                            <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[20px] ss:px-[32px] h-[48px] xs:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                            <a href="https://discord.com/invite/gkAqERE6AF" target='_blank' className="inline-block relative z-2 text-white koulen text__32 uppercase px-[20px] ss:px-[32px] h-[48px] xs:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
                                 <img src="./../images/Mask group.png" className="absolute left-0 top-0" alt="" />
                                 <img src="./../images/discord.svg" className="-skew-x-[40deg] relative z-[2] w-[36px] ss:w-[52px]" alt="" />
                             </a>

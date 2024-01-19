@@ -49,77 +49,74 @@ const Desktop = (props) => {
             }
         });
 
+        TweenMax.set(coverVideo, {
+            css: {
+                width: "100%",
+                height: "100%",
+                left: "0",
+                top: "50%",
+                yPercent: -50,
+                ease: Circ.easeOut
+            },
+        });
+        TweenMax.set(navbar, {
+            css: {
+                top: "-100rem"
+            },
+        });
 
+        TweenMax.set(titleHero, {
+            css: {
+                right: "-100rem"
+            },
+        });
+
+        TweenMax.set(trailer, {
+            css: {
+                right: "-100rem"
+            },
+        });
+        TweenMax.set(lineLeft, {
+            css: {
+                left: "-100rem"
+            },
+        });
+        TweenMax.set(textMoto, {
+            css: {
+                left: "-100rem"
+            },
+        });
+        TweenMax.set(character, {
+            css: {
+                left: "-100rem"
+            },
+        });
+        TweenMax.set(lineRIght, {
+            css: {
+                right: "-100rem"
+            },
+        });
+        TweenMax.set(sosmedBottom, {
+            css: {
+                bottom: "-100rem"
+            },
+        });
         videoLoad.current.onplaying = function () {
             if (playing) {
                 // / inisialisaisi
                 const tl = new TimelineMax({
-                    repeat: 0, delay: 0.5, onComplete: () => {
+                    repeat: 0, onComplete: () => {
                         window.fullpage_api.setAllowScrolling(true);
                     }
                 });
 
 
-                TweenMax.set(coverVideo, {
-                    css: {
-                        width: "100%",
-                        height: "100%",
-                        left: "0",
-                        top: "50%",
-                        yPercent: -50,
-                        ease: Circ.easeOut
-                    },
-                });
-
-                TweenMax.set(navbar, {
-                    css: {
-                        top: "-100rem"
-                    },
-                });
-
-                TweenMax.set(titleHero, {
-                    css: {
-                        right: "-100rem"
-                    },
-                });
-
-                TweenMax.set(trailer, {
-                    css: {
-                        right: "-100rem"
-                    },
-                });
-                TweenMax.set(lineLeft, {
-                    css: {
-                        left: "-100rem"
-                    },
-                });
-                TweenMax.set(textMoto, {
-                    css: {
-                        left: "-100rem"
-                    },
-                });
-                TweenMax.set(character, {
-                    css: {
-                        left: "-100rem"
-                    },
-                });
-                TweenMax.set(lineRIght, {
-                    css: {
-                        right: "-100rem"
-                    },
-                });
-                TweenMax.set(sosmedBottom, {
-                    css: {
-                        bottom: "-100rem"
-                    },
-                });
 
                 tl.add([
                     TweenMax.to(bgWrap, 1, {
                         css: {
                             opacity: 0,
                         },
-                        duration: 0.5,
                     }),
                 ]);
 
@@ -131,9 +128,13 @@ const Desktop = (props) => {
                             left: "0",
                             top: "50%",
                             yPercent: -50,
-                            ease: Circ.easeOut
+                            ease: Circ.easeOut,
                         },
-                        duration: 0.5,
+                        delay: 1.5,
+                    }),
+                ]);
+                tl.add([
+                    TweenLite.to(coverVideo, 1, {
                         onComplete: function () {
                             TweenLite.set(coverVideo, { clearProps: "all", ease: Circ.easeOut });
                         }
@@ -144,7 +145,6 @@ const Desktop = (props) => {
                         css: {
                             top: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(navbar, { top: "0rem" });
                             anime({
@@ -152,7 +152,7 @@ const Desktop = (props) => {
                                 strokeDashoffset: [anime.setDashoffset, 0],
                                 easing: 'easeInOutSine',
                                 duration: 1000,
-                                delay: 2,
+                                duration: 1,
                                 direction: 'alternate',
                                 loop: false
                             });
@@ -162,9 +162,8 @@ const Desktop = (props) => {
                 tl.add([
                     TweenLite.to(titleHero, 1, {
                         css: {
-                            right: "-100rem"
+                            right: "-100rem",
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(titleHero, { clearProps: "all" });
                         }
@@ -175,7 +174,6 @@ const Desktop = (props) => {
                         css: {
                             right: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(trailer, { clearProps: "all" });
                         }
@@ -186,7 +184,6 @@ const Desktop = (props) => {
                         css: {
                             left: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(lineLeft, { clearProps: "all" });
 
@@ -207,7 +204,6 @@ const Desktop = (props) => {
                         css: {
                             left: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(character, { clearProps: "all" });
                         }
@@ -218,7 +214,6 @@ const Desktop = (props) => {
                         css: {
                             left: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(textMoto, { clearProps: "all" });
                         }
@@ -229,7 +224,6 @@ const Desktop = (props) => {
                         css: {
                             right: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(lineRIght, { clearProps: "all" });
                         }
@@ -240,12 +234,13 @@ const Desktop = (props) => {
                         css: {
                             bottom: "-100rem"
                         },
-                        duration: 0.5,
                         onComplete: function () {
                             TweenLite.set(sosmedBottom, { clearProps: "all" });
                         }
                     }),
                 ]);
+
+                tl.duration(4.5).play()
 
                 playing = false;
             }
@@ -282,7 +277,7 @@ const Desktop = (props) => {
                 controls={false}
                 loop
                 playsInline
-                preload="auto"
+                preload={true}
                 muted
             >
                 <source
@@ -295,7 +290,7 @@ const Desktop = (props) => {
                 />
                 Your browser does not support the video tag.
             </video>
-            <div className="container relative z-[2] h-full hidden md:block">
+            <div className="container relative z-[2] h-full hidden md:block pointer-events-none">
                 <div className="character transition-all duration-500 absolute bottom-0 left-[6rem] hminlg700:left-[9rem] hminlg900:left-[4rem] lg:left-[13rem]">
                     <img src="./../images/pose 5.png" className="w-[59vh]" alt="" />
                 </div>
@@ -312,7 +307,7 @@ const Desktop = (props) => {
                     <div className="flex items-center gap-3 mt-8">
                         <div className="relative inline-block">
                             <div className="absolute w-[271px] h-full -left-[3rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
-                            <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[36px] lg:px-[52px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                            <a href="https://www.meta.com/experiences/5754014731339882/" target='_blank' className="inline-block relative z-2 text-white koulen text__32 uppercase px-[36px] lg:px-[52px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden pointer-events-auto">
                                 <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                 <span className="-skew-x-[40deg] relative z-[2]">
                                     join BETA
@@ -321,7 +316,7 @@ const Desktop = (props) => {
                         </div>
                         <div className="relative inline-block">
                             <div className="absolute w-[271px] h-full -right-[3rem] bg-shadow-btn skew-x-[40deg]"></div>
-                            <a href="#!" className="inline-block relative z-2 text-white koulen text__32 uppercase px-[32px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
+                            <a href="https://discord.com/invite/gkAqERE6AF" target='_blank' className="inline-block relative z-2 text-white koulen text__32 uppercase px-[32px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden pointer-events-auto">
                                 <img src="./../images/Mask group.png" className="absolute left-0 top-0" alt="" />
                                 <img src="./../images/discord.svg" className="-skew-x-[40deg] relative z-[2] w-[52px]" alt="" />
                             </a>
@@ -330,7 +325,7 @@ const Desktop = (props) => {
                 </div>
 
                 <div className="wrapper__trailer transition-all duration-500 absolute z-[10] right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] bottom-[22vh]">
-                    <div className="flex items-center gap-3 pointer" onClick={props.toogleModal}>
+                    <div className="flex items-center gap-3 pointer pointer-events-auto" onClick={props.toogleModal}>
                         <img src="./../images/Group 706149.svg" className="w-[60px]" alt="" />
                         <span className="koulen text__32 text-white">watch trailer</span>
                     </div>

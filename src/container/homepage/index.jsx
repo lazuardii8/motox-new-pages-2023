@@ -4,6 +4,9 @@ import Navbar from "../../component/Other/Navbar";
 import { ClosedIcon, Sec4Line2Icon, Sec5Line2Icon, Sec5Line3Icon, Sec6Line4Icon, Sec7Line1Icon, Sec7Line2Icon } from "../../component/Svg/Svg";
 import ReactPlayer from "react-player";
 import { TweenMax } from "gsap";
+import Desktop from "../../component/Section/one/Desktop";
+import Mobile from "../../component/Section/one/Mobile";
+import $ from "jquery";
 
 
 const Section1 = React.lazy(() => import('./section/section1'));
@@ -149,7 +152,14 @@ export default class index extends Component {
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
-                          <Section1 toogleModal={this.toogleModal} />
+                          {/* <Section1 toogleModal={this.toogleModal} /> */}
+                          {
+                            ($(window).width() >= 768) ?
+                              <Desktop toogleModal={this.toogleModal} />
+                              :
+                              <Mobile toogleModal={this.toogleModal} />
+
+                          }
                         </Suspense>
                       </div>
                     </div>
