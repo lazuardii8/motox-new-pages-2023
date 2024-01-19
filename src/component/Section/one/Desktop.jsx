@@ -277,7 +277,7 @@ const Desktop = (props) => {
                 controls={false}
                 loop
                 playsInline
-                preload="auto"
+                preload={true}
                 muted
             >
                 <source
