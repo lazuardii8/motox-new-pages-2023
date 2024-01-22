@@ -130,8 +130,8 @@ const Section3 = (props) => {
             <div className="relative w-full h-full">
                 <Slider ref={slider} {...settings}>
                     {
-                        dataTracks.map((obj) => {
-                            return <div>
+                        dataTracks.map((obj, i) => {
+                            return <div key={i}>
                                 <div className="w-full wrapper__h-100-screan relative overflow-hidden">
                                     <img src="./../images/sec 3 - line.svg" className='absolute right-0 top-0 h-full' alt="" />
                                     <img src={obj.background} className='absolute left-0 -bottom-[4vh] md:-bottom-[17vh] hminxl900:-bottom-[7vh] w-full h-full object-cover' alt="" />

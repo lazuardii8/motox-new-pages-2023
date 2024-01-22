@@ -6,6 +6,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
+      xsTop: "576px",
       ...defaultTheme.screens,
       hminlg700: { raw: "((min-height: 700px) and (min-width: 1024px))" },
       hminlg800: { raw: "((min-height: 800px) and (min-width: 1024px))" },
@@ -23,9 +24,18 @@ module.exports = {
       hmin3Xl800: { raw: "((min-height: 800px) and (min-width: 1600px))" },
       hmin3Xl900: { raw: "((min-height: 900px) and (min-width: 1600px))" },
       
+      hminlg850: { raw: "((min-height: 850px) and (min-width: 1024px))" },
+      hminlg950: { raw: "((min-height: 950px) and (min-width: 1024px))" },
+      hminlg1000: { raw: "((min-height: 1000px) and (min-width: 1024px))" },
+      hminlg1100: { raw: "((min-height: 1100px) and (min-width: 1024px))" },
+      hminlg1200: { raw: "((min-height: 1200px) and (min-width: 1024px))" },
       
+      hminmd1024: { raw: "((min-height: 1024px) and (min-width: 768px))" },
+
       hminSm700: { raw: "((min-height: 700px) and (min-width: 576px))" },
       hminSm800: { raw: "((min-height: 800px) and (min-width: 576px))" },
+
+      hminss800: { raw: "((min-height: 800px) and (min-width: 480px))" },
 
       hminMaxSm: { raw: "(max-width: 576px)" },
       hminMaxSm600: { raw: "((min-height: 601px) and (max-width: 570px))" },

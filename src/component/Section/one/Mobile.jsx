@@ -238,7 +238,7 @@ const Mobile = (props) => {
             <div className="lineLeft transition-all duration-500 absolute left-0 bottom-0 md:hidden w-full pointer-events-none z-[1]">
                 <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 981 458" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_b_119_1732)">
-                        <path className='s1-pt-1' d="M566 181.5L661.5 277H799.5L981 458.5H139L0 319.5V16H54.5L220 181.5H566Z" fill="white" fill-opacity="0.05" />
+                        <path className='s1-pt-1' d="M566 181.5L661.5 277H799.5L981 458.5H139L0 319.5V16H54.5L220 181.5H566Z" fill="white" fillOpacity="0.05" />
                     </g>
                     <path className='s1-pt-1' d="M733 439L562 268H602.5L773.5 439H733Z" fill="#F43329" />
                     <path className='s1-pt-1' d="M248 414L77 243H107.5L278.5 414H248Z" fill="#F43329" />
@@ -247,8 +247,8 @@ const Mobile = (props) => {
                     <path className='s1-pt-1' d="M-38 1L133 172H92.5L61.5 141" stroke="white" />
                     <path className='s1-pt-1' d="M468.5 162H576.5L673.5 259H792.5" stroke="white" />
                     <defs>
-                        <filter id="filter0_b_119_1732" x="-30" y="-14" width="1041" height="502.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <filter id="filter0_b_119_1732" x="-30" y="-14" width="1041" height="502.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feGaussianBlur in="BackgroundImageFix" stdDeviation="15" />
                             <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_119_1732" />
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_119_1732" result="shape" />
@@ -328,7 +328,7 @@ const Mobile = (props) => {
                         </div>
                     </div>
 
-                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 hmaxMaxSm600:w-[28vh] hminMaxSm600:w-[33vh] sm: left-1/2 hminMaxSm700:w-[30vh] hminMaxSm800:w-[36vh] -translate-x-1/2 pointer-events-none" alt="" />
+                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 hmaxMaxSm600:w-[28vh] hminMaxSm600:w-[33vh] sm: left-1/2 hminMaxSm700:w-[30vh] hminMaxSm800:w-[30vh] -translate-x-1/2 pointer-events-none" alt="" />
 
 
                 </div>
