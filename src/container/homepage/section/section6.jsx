@@ -14,7 +14,7 @@ const section6 = (props) => {
                 controls={false}
                 loop
                 playsInline
-                preload
+                preload="auto"
                 muted
             >
                 <source

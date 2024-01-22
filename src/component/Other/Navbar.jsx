@@ -71,12 +71,12 @@ const Navbar = (props) => {
                     {/* <img src="./../images/Vector 317.png" className="images__nav-line-1 md:w-[44vh] xl:w-auto" alt="" /> */}
                     <div className="images__nav-line-1 md:w-[44vh] xl:w-auto">
                         <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 379 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="nav-p-1" d="M0 22H207.5L228.5 1H378.5" stroke="#FC003C" stroke-width="2" />
+                            <path id="nav-p-1" d="M0 22H207.5L228.5 1H378.5" stroke="#FC003C" strokeWidth="2" />
                         </svg>
                     </div>
                     <a
                         onClick={() => window.fullpage_api.moveTo(1)}
-                        class={"pointer navbar-brand font__size--18 text__18-1024 normal "}
+                        className={"pointer navbar-brand font__size--18 text__18-1024 normal "}
                     >
                         <LogoIcon width={"62px"} height={"52px"} />
                     </a>
@@ -92,7 +92,7 @@ const Navbar = (props) => {
 
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(1)}
-                                    class={"pointer nav-link font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 1 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 1 ? "bold" : "opacity__4 normal")}
                                 >
                                     HOME
                                 </a>
@@ -102,7 +102,7 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(2)}
-                                    class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 2 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 2 ? "bold" : "opacity__4 normal")}
                                 >
                                     MotoX
                                 </a>
@@ -110,7 +110,7 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(3)}
-                                    class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 3 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 3 ? "bold" : "opacity__4 normal")}
                                 >
                                     Tracks
                                 </a>
@@ -120,7 +120,7 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(4)}
-                                    class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 4 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 4 ? "bold" : "opacity__4 normal")}
                                 >
                                     Multiplayer
                                 </a>
@@ -128,7 +128,7 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(5)}
-                                    class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 5 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 5 ? "bold" : "opacity__4 normal")}
                                 >
                                     Career
                                 </a>
@@ -136,7 +136,7 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(6)}
-                                    class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 6 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 6 ? "bold" : "opacity__4 normal")}
                                 >
                                     WORLD
                                 </a>
@@ -144,7 +144,7 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a
                                     onClick={() => window.fullpage_api.moveTo(7)}
-                                    class={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 7 ? "bold" : "opacity__4 normal")}
+                                    className={"pointer nav-link light font__size--16 text__16-1024 text-uppercase color__white hover " + (props.current == 7 ? "bold" : "opacity__4 normal")}
                                 >
                                     community
                                 </a>
@@ -155,7 +155,7 @@ const Navbar = (props) => {
                     <div className="d-flex align-items-center d-lg-none ml-auto">
                         <div
                             onClick={() => setToogleMenu(!toogleMenu)}
-                            class={"pointer nav__button position-relative " + (toogleMenu ? "active" : "")}
+                            className={"pointer nav__button position-relative " + (toogleMenu ? "active" : "")}
                         >
                             <span></span>
                             <span></span>

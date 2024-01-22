@@ -3,8 +3,8 @@ import React, { Fragment } from 'react'
 const section5 = (props) => {
     return (
         <Fragment>
-            <img src="./../images/sec 5 - layer 3.svg" className='absolute w-full left-0 top-0' alt="" />
-            <div className="absolute bottom-[7rem] lg:bottom-0 w-[79vh] lg:w-[88vh] right-0 lg:right-[6rem] bottom-[4rem] hminxl800:w-[75vh] hminxl800:right-[12rem] hmaxMaxSm600:w-[42vh] hminMaxSm600:w-[54vh] hminMaxSm:bottom-0 hminMaxSm:left-1/2 hminMaxSm:-translate-x-1/2 hminMaxSm700:w-[51vh] hminMaxSm700:bottom-0 hminMaxSm700:left-1/2 hminMaxSm700:-translate-x-1/2">
+            <img src="./../images/sec 5 - layer 3.svg" className='absolute w-full left-0 top-0 hminlg1100:h-full hminmd1024:h-full' alt="" />
+            <div className="absolute bottom-[7rem] lg:bottom-0 w-[79vh] lg:w-[88vh] right-0 lg:right-[6rem] bottom-[4rem] hminxl800:w-[75vh] hminxl800:right-[12rem] hmaxMaxSm600:w-[42vh] hminMaxSm600:w-[54vh] hminMaxSm:bottom-0 hminMaxSm:left-1/2 hminMaxSm:-translate-x-1/2 hminMaxSm700:w-[51vh] hminMaxSm700:bottom-0 hminMaxSm700:left-1/2 hminMaxSm700:-translate-x-1/2 hminlg1000:w-[88vh] hminlg1100:w-[78vh]">
                 <div className="relative w-full">
                     <img src="./../images/sec 5 - layer 2.png" className='w-full' alt="" />
                     <img src="./../images/sec 5 - layer 1.svg" className='absolute right-[3rem] -bottom-[6rem] w-[80vh]' alt="" />

@@ -6,7 +6,8 @@ const Mobile = React.lazy(() => import('../../../component/Section/one/Mobile'))
 
 const Section1 = (props) => {
   const showScreen = () => {
-    if ($(window).width() >= 768) {
+    console.log($(window).width())
+    if ($(window).width() >= 576) {
       return <Suspense fallback={<div>Loading...</div>}>
         <Desktop toogleModal={props.toogleModal} />
       </Suspense>

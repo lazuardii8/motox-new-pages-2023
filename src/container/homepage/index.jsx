@@ -9,14 +9,14 @@ import Mobile from "../../component/Section/one/Mobile";
 import $ from "jquery";
 
 
-const Section1 = React.lazy(() => import('./section/section1'));
+// const Section1 = React.lazy(() => import('./section/section1'));
 const Section2 = React.lazy(() => import('./section/section2'));
 const Section3 = React.lazy(() => import('./section/section3'));
 const Section4 = React.lazy(() => import('./section/section4'));
 const Section5 = React.lazy(() => import('./section/section5'));
 const Section6 = React.lazy(() => import('./section/section6'));
 const Section7 = React.lazy(() => import('./section/section7'));
-const Section8 = React.lazy(() => import('./section/section8'));
+// const Section8 = React.lazy(() => import('./section/section8'));
 
 export default class index extends Component {
   constructor(props) {
@@ -29,10 +29,6 @@ export default class index extends Component {
       anchorSelect: "",
       isOpen: false,
     };
-  }
-
-  componentDidMount() {
-
   }
 
   onLeave(origin, destination, direction) {
@@ -73,7 +69,7 @@ export default class index extends Component {
   }
 
   solveSkipPages(origin, destination, direction) {
-    console.log(destination.index + 1)
+    // console.log(destination.index + 1)
     // window.fullpage_api.moveTo(destination.index)
     setTimeout(function () {
       window.fullpage_api.moveTo(destination.index + 1);
@@ -85,13 +81,12 @@ export default class index extends Component {
     // console.log(api);
   }
   componentDidMount() {
-
+    setTimeout(() => console.clear(), 1500);
     const style = document.documentElement.style;
     style.setProperty("--height", `${window.innerHeight}px`);
   }
 
   toogleModal = () => {
-    console.log('modal')
     this.setState({
       isOpen: !this.state.isOpen
     })
@@ -154,7 +149,7 @@ export default class index extends Component {
                         <Suspense fallback={<div></div>}>
                           {/* <Section1 toogleModal={this.toogleModal} /> */}
                           {
-                            ($(window).width() >= 768) ?
+                            ($(window).width() >= 576) ?
                               <Desktop toogleModal={this.toogleModal} />
                               :
                               <Mobile toogleModal={this.toogleModal} />
