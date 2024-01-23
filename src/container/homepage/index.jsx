@@ -97,24 +97,26 @@ export default class index extends Component {
     return (
       <Fragment>
 
-        <div className={"wrapper__modal-full-video bg-black " + (this.state.isOpen ? "active" : "")}>
-          <div className="wrap">
-            <div className="close pointer" onClick={this.toogleModal}>
-              <ClosedIcon />
+        <Suspense>
+          <div className={"wrapper__modal-full-video bg-black " + (this.state.isOpen ? "active" : "")}>
+            <div className="wrap">
+              <div className="close pointer" onClick={this.toogleModal}>
+                <ClosedIcon />
+              </div>
+              <ReactPlayer
+                className="loading_img"
+                url="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
+                playing={this.state.isOpen}
+                muted={false}
+                autoPlay={this.state.isOpen}
+                playsinline={true}
+                width="100%"
+                height="100%"
+                controls={true}
+              />
             </div>
-            <ReactPlayer
-              className="loading_img"
-              url="https://dfpcevrzf8nxo.cloudfront.net/kyle-ende4.mp4"
-              playing={this.state.isOpen}
-              muted={false}
-              autoPlay={this.state.isOpen}
-              playsinline={true}
-              width="100%"
-              height="100%"
-              controls={true}
-            />
           </div>
-        </div>
+        </Suspense>
 
 
 
@@ -146,16 +148,13 @@ export default class index extends Component {
                     <div className="bgWrap absolute z-[9999] w-full h-full left-0 top-0 bg-black transition-all duration-500 pointer-events-none"></div>
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
-                        <Suspense fallback={<div></div>}>
-                          {/* <Section1 toogleModal={this.toogleModal} /> */}
-                          {
-                            ($(window).width() >= 576) ?
-                              <Desktop toogleModal={this.toogleModal} />
-                              :
-                              <Mobile toogleModal={this.toogleModal} />
+                        {
+                          ($(window).width() >= 576) ?
+                            <Desktop toogleModal={this.toogleModal} />
+                            :
+                            <Mobile toogleModal={this.toogleModal} />
 
-                          }
-                        </Suspense>
+                        }
                       </div>
                     </div>
                   </div>
