@@ -7,15 +7,15 @@ const Homepage = React.lazy(() => import('./homepage/index'));
 const index = (props) => {
   return (
     <Fragment>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
+        <Router>
+          <Switch>
+            <Route exact path="/">
               <Homepage />
-            </Suspense>
-          </Route>
-        </Switch>
-      </Router>
+            </Route>
+          </Switch>
+        </Router>
+      </Suspense>
     </Fragment>
   );
 };
