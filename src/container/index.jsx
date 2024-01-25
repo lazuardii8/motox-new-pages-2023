@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // dashboard
 const Homepage = React.lazy(() => import('./homepage/index'));
+const Error = React.lazy(() => import('./homepage/Error'));
 
 const index = (props) => {
   return (
@@ -12,6 +13,9 @@ const index = (props) => {
           <Switch>
             <Route exact path="/">
               <Homepage />
+            </Route>
+            <Route exact path="*">
+              <Error />
             </Route>
           </Switch>
         </Router>

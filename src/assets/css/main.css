@@ -5726,6 +5726,13 @@ h5 {
   top: -100rem;
   background-color: transparent !important;
 }
+.wrapper__navbar.showing {
+  position: fixed !important;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent !important;
+}
 .wrapper__navbar-menu ul {
   position: relative;
 }

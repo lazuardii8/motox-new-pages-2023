@@ -39,6 +39,9 @@
 .text__48 {
     @apply text-[24px] md:text-[28px] lg:text-[32px] xl:text-[48px]
 }
+.text__50 {
+    @apply text-[28px] md:text-[32px] lg:text-[45px] xl:text-[50px]
+}
 .text__56 {
     @apply text-[28px] md:text-[32px] lg:text-[48px] xl:text-[56px]
 }

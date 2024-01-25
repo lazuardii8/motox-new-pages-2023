@@ -134,6 +134,13 @@
       top: -100rem;
       background-color: transparent !important;
     }
+    &.showing {
+      position: fixed !important;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-color: transparent !important;
+    }
     &.active {
       // @media screen and(max-width: $br-md) {
       //   background-color: color('black') !important;

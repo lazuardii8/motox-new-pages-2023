@@ -122,8 +122,9 @@ export default class index extends Component {
 
         <Navbar current={this.state.currentSlide} />
 
-        <div className="overflow-hidden position-relative wrapper__wrap-all-screan">
-
+        <div className="overflow-hidden position-relative wrapper__wrap-all-screan bg-black">
+          <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover md:block hidden" alt="" />
+          <img src="./../images/responsivebg.svg" className="absolute left-0 top-0 w-full h-full object-cover md:hidden" alt="" />
           <ReactFullpage
             scrollOverflow={true}
             loopBottom={false}
@@ -143,8 +144,7 @@ export default class index extends Component {
               ></Component>;
               return (
                 <div id="fullpage-wrapper position-relative">
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className="bgWrap absolute z-[9999] w-full h-full left-0 top-0 bg-black transition-all duration-500 pointer-events-none"></div>
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
@@ -158,8 +158,7 @@ export default class index extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
@@ -168,8 +167,7 @@ export default class index extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className=" wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
@@ -178,8 +176,7 @@ export default class index extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center wrapper__align-750-680-end">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
@@ -188,8 +185,7 @@ export default class index extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
@@ -198,8 +194,7 @@ export default class index extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
@@ -208,8 +203,7 @@ export default class index extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="section bg__black position-relative overflow-hidden">
-                    <img src="./../images/Group 706067.svg" className="absolute left-0 top-0 w-full h-full object-cover" alt="" />
+                  <div className="section position-relative overflow-hidden">
                     <div className="wrapper__h-100-screan overflow-hidden d-flex align-items-center justify-content-center">
                       <div className="w-100 h-full">
                         <Suspense fallback={<div></div>}>
