@@ -30,7 +30,7 @@ const Section3 = (props) => {
         {
             title: `Tracks: Dead <br class="hidden sm:block" /> Forest`,
             desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block" /> with challenging terrain`,
-            background: "./../images/sec 3 - layer 2.svg",
+            background: "./../images/sec 3 - layer 2.png",
             track: "./../images/map - 1.svg",
             trackTitle: "Dead Forest",
             trackDesc: "Dead Forest: Prepare for a motocross adventure like no other. Tackle treacherous turns, jaw-dropping jumps, and navigate through the eerie obstacles of the Dead Forest track.",
@@ -46,7 +46,7 @@ const Section3 = (props) => {
         {
             title: `Tracks: <br class="hidden sm:block" /> Grasslands`,
             desc: `Experience the thrill of the Grasslands track, where <br class="hidden sm:block" /> speed meets nature's challenges. Are you ready to <br class="hidden sm:block" /> conquer this dynamic motocross terrain?`,
-            background: "./../images/bgtrack2.svg",
+            background: "./../images/bgtrack2.png",
             track: "./../images/track2.svg",
             trackTitle: "Grasslands ",
             trackDesc: "Grasslands Track: Get ready to navigate a thrilling motocross circuit with hairpin turns, heart-pounding jumps, and natural obstacles. Conquer the wild beauty of the grasslands and show your mastery over diverse terrain",
@@ -62,7 +62,7 @@ const Section3 = (props) => {
         {
             title: `Tracks: Emerald <br class="hidden sm:block" /> Desert   `,
             desc: `Prepare for an adrenaline-fueled ride through the <br class="hidden sm:block" /> Emerald Desert track. Master the dunes, conquer the <br class="hidden sm:block" /> heat, and make your mark in the heart of the desert!`,
-            background: "./../images/bgtrack3.svg",
+            background: "./../images/bgtrack3.png",
             track: "./../images/track3.svg",
             trackTitle: "Emerald Desert   ",
             trackDesc: "Emerald Desert: Conquer a rugged motocross oasis with sharp turns, gravity-defying jumps, and formidable obstacles. Test your skills in this dynamic terrain, where the desert's secrets await brave riders",
@@ -78,7 +78,7 @@ const Section3 = (props) => {
         {
             title: `Tracks: <br class="hidden sm:block" /> California Beach`,
             desc: `Hit the sandy shores of the California Beach track for <br class="hidden sm:block" /> high-speed motocross action. Sun, surf, and intense <br class="hidden sm:block" /> racing – it's the ultimate beachside thrill!`,
-            background: "./../images/bgtrack 4.svg",
+            background: "./../images/bgtrack 4.png",
             track: "./../images/track4.svg",
             trackTitle: "Emerald Desert",
             trackDesc: "California Beach: A motocross paradise with a twist. Master a thrilling blend of tight turns, breathtaking jumps, and diverse obstacles. This track demands both finesse and fearless speed.",
@@ -94,7 +94,7 @@ const Section3 = (props) => {
         {
             title: `Tracks: <br class="hidden sm:block" /> Supercross  `,
             desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block" /> with challenging terrain`,
-            background: "./../images/bgtrack 5.svg",
+            background: "./../images/bgtrack 5.png",
             track: "./../images/track5.svg",
             trackTitle: "Emerald Desert",
             trackDesc: "Bibendum velit sollicitudin facilisi nisl praesent orci faucibus aliquam. Aenean vehicula porttitor quam sit enim id viverra. Erat consectetur turpis et aliquet.",
@@ -110,7 +110,7 @@ const Section3 = (props) => {
         {
             title: `Tracks: Canyon  `,
             desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br /> with challenging terrain`,
-            background: "./../images/bgtrack6.svg",
+            background: "./../images/bgtrack6.png",
             track: "./../images/track 6.svg",
             trackTitle: "Emerald Desert",
             trackDesc: "Bibendum velit sollicitudin facilisi nisl praesent orci faucibus aliquam. Aenean vehicula porttitor quam sit enim id viverra. Erat consectetur turpis et aliquet.",
@@ -153,7 +153,7 @@ const Section3 = (props) => {
                                                             <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                                             <span className="-skew-x-[40deg] relative z-[2]">
                                                                 <span className="flex items-center gap-2">
-                                                                    <img src="./../images/arrow.svg" alt="" />
+                                                                    <img src="./../images/arrow.png" alt="" />
                                                                     <span>prev</span>
                                                                 </span>
                                                             </span>
@@ -165,7 +165,7 @@ const Section3 = (props) => {
                                                             <span className="-skew-x-[40deg] relative z-[2]">
                                                                 <span className="flex items-center gap-2">
                                                                     <span>next</span>
-                                                                    <img src="./../images/arrow.svg" className='rotate-[180deg]' alt="" />
+                                                                    <img src="./../images/arrow.png" className='rotate-[180deg]' alt="" />
                                                                 </span>
                                                             </span>
                                                         </div>
@@ -217,7 +217,7 @@ const Section3 = (props) => {
                                                         <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                                         <span className="-skew-x-[40deg] relative z-[2]">
                                                             <span className="flex items-center gap-2">
-                                                                <img src="./../images/arrow.svg" alt="" />
+                                                                <img src="./../images/arrow.png" alt="" />
                                                                 <span>prev</span>
                                                             </span>
                                                         </span>
@@ -229,7 +229,7 @@ const Section3 = (props) => {
                                                         <span className="-skew-x-[40deg] relative z-[2]">
                                                             <span className="flex items-center gap-2">
                                                                 <span>next</span>
-                                                                <img src="./../images/arrow.svg" className='rotate-[180deg]' alt="" />
+                                                                <img src="./../images/arrow.png" className='rotate-[180deg]' alt="" />
                                                             </span>
                                                         </span>
                                                     </div>
