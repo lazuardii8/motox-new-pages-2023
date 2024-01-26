@@ -847,7 +847,7 @@
     }
   }
   &__wrap-all-screan {
-    @media screen and(max-width: $br-sm) {
+    @media screen and(max-width: 1024px) {
       height: calc(var(--height, 1vh) * 100) !important;
     }
   }
