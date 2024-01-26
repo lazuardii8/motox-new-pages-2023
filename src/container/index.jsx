@@ -1,11 +1,11 @@
 import React, { Fragment, Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import $ from "jquery"
 // dashboard
 const Homepage = React.lazy(() => import('./homepage/index'));
 const Error = React.lazy(() => import('./homepage/Error'));
 
-const index = (props) => {
+const Index = (props) => {
   useEffect(() => {
     $('body').on('click touchstart', function () {
       var videoSleep = document.querySelectorAll("video.lazy");
@@ -60,4 +60,4 @@ const index = (props) => {
   );
 };
 
-export default index;
+export default Index;
