@@ -51,10 +51,10 @@ const Mobile = (props) => {
 
         TweenMax.set(coverVideo, {
             css: {
-                width: window.innerWidth + 45,
-                height: window.innerHeight + 45,
+                width: window.innerWidth + 95,
+                height: window.innerHeight + 100,
                 x: "-3rem",
-                y: "-17%"
+                y: "-24%"
             },
         });
 
@@ -271,9 +271,9 @@ const Mobile = (props) => {
             <div className="container relative md:hidden h-full">
                 <div className="inline-block w-full h-full relative">
 
-                    <div className="absolute w-full top-[2rem] hminMaxSm900:top-[5rem] left-0 top-0">
+                    <div className="absolute w-full top-[95px] hminMaxSm900:top-[5rem] left-0 top-0">
                         <div className="logoCover transition-all duration-500 text-center relative z-[1] -mb-[5rem]">
-                            <img src="./../images/Group 1502.png" className="mx-auto" alt="" />
+                            <img src="./../images/Group 1502.png" className="mx-auto w-[65vw]" alt="" />
                         </div>
                         <div className="coverVideo transition-all duration-500 p-[1rem] relative w-full border border-solid !border-[#FFFFFF26] lineVideo transition-all duration-500">
                             <img src="./../images/rc (1).png" className="absolute left-0 top-0" alt="" />
@@ -328,7 +328,7 @@ const Mobile = (props) => {
                         </div>
                     </div>
 
-                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 hmaxMaxSm600:w-[28vh] hminMaxSm600:w-[33vh] sm: left-1/2 hminMaxSm700:w-[30vh] hminMaxSm800:w-[30vh] -translate-x-1/2 pointer-events-none" alt="" />
+                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 hmaxMaxSm600:w-[28vh] hminMaxSm600:w-[26vh] sm: left-1/2 hminMaxSm700:w-[30vh] hminMaxSm800:w-[30vh] -translate-x-1/2 pointer-events-none" alt="" />
 
 
                 </div>
