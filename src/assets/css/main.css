@@ -3716,7 +3716,7 @@ h5 {
     height: var(--height);
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
   .wrapper__wrap-all-screan {
     height: calc(var(--height, 1vh) * 100) !important;
   }
