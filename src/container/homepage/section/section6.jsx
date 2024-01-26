@@ -9,7 +9,7 @@ const section6 = (props) => {
             <video
                 data-keepplaying
                 // poster="./../images/Rectangle 22653.png"
-                className='w-full h-full absolute left-0 top-0 object-cover z-[1]'
+                className='w-full lazy h-full absolute left-0 top-0 object-cover z-[1]'
                 autoPlay
                 controls={false}
                 loop
