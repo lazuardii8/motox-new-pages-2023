@@ -328,7 +328,7 @@ const Mobile = (props) => {
                         </div>
                     </div>
 
-                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 hmaxMaxSm600:w-[28vh] hminMaxSm600:w-[26vh] sm: left-1/2 hminMaxSm700:w-[30vh] hminMaxSm800:w-[30vh] -translate-x-1/2 pointer-events-none" alt="" />
+                    <img src="./../images/pose 5.png" className="motoContent transition-all duration-500 absolute bottom-0 hmaxMaxSm600:w-[28vh] hminMaxSm600:w-[26vh] sm: left-1/2 hminMaxSm700:w-[26vh] hminMaxSm800:w-[30vh] -translate-x-1/2 pointer-events-none" alt="" />
 
 
                 </div>
