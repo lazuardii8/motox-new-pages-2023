@@ -28,8 +28,8 @@ const Section3 = (props) => {
     };
     const dataTracks = [
         {
-            title: `Tracks: Dead <br class="hidden sm:block" /> Forest`,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block" /> with challenging terrain`,
+            title: `Tracks: Dead <br class="hidden sm:block md:hidden lg:block" /> Forest`,
+            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block md:hidden lg:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block md:hidden lg:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block md:hidden lg:block" /> with challenging terrain`,
             background: "./../images/sec 3 - layer 2.png",
             track: "./../images/map - 1.svg",
             trackTitle: "Dead Forest",
@@ -44,8 +44,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: <br class="hidden sm:block" /> Grasslands`,
-            desc: `Experience the thrill of the Grasslands track, where <br class="hidden sm:block" /> speed meets nature's challenges. Are you ready to <br class="hidden sm:block" /> conquer this dynamic motocross terrain?`,
+            title: `Tracks: <br class="hidden sm:block md:hidden lg:block" /> Grasslands`,
+            desc: `Experience the thrill of the Grasslands track, where <br class="hidden sm:block md:hidden lg:block" /> speed meets nature's challenges. Are you ready to <br class="hidden sm:block md:hidden lg:block" /> conquer this dynamic motocross terrain?`,
             background: "./../images/bgtrack2.png",
             track: "./../images/track2.svg",
             trackTitle: "Grasslands ",
@@ -60,8 +60,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: Emerald <br class="hidden sm:block" /> Desert   `,
-            desc: `Prepare for an adrenaline-fueled ride through the <br class="hidden sm:block" /> Emerald Desert track. Master the dunes, conquer the <br class="hidden sm:block" /> heat, and make your mark in the heart of the desert!`,
+            title: `Tracks: Emerald <br class="hidden sm:block md:hidden lg:block" /> Desert   `,
+            desc: `Prepare for an adrenaline-fueled ride through the <br class="hidden sm:block md:hidden lg:block" /> Emerald Desert track. Master the dunes, conquer the <br class="hidden sm:block md:hidden lg:block" /> heat, and make your mark in the heart of the desert!`,
             background: "./../images/bgtrack3.png",
             track: "./../images/track3.svg",
             trackTitle: "Emerald Desert   ",
@@ -76,8 +76,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: <br class="hidden sm:block" /> California Beach`,
-            desc: `Hit the sandy shores of the California Beach track for <br class="hidden sm:block" /> high-speed motocross action. Sun, surf, and intense <br class="hidden sm:block" /> racing – it's the ultimate beachside thrill!`,
+            title: `Tracks: <br class="hidden sm:block md:hidden lg:block" /> California Beach`,
+            desc: `Hit the sandy shores of the California Beach track for <br class="hidden sm:block md:hidden lg:block" /> high-speed motocross action. Sun, surf, and intense <br class="hidden sm:block md:hidden lg:block" /> racing – it's the ultimate beachside thrill!`,
             background: "./../images/bgtrack 4.png",
             track: "./../images/track4.svg",
             trackTitle: "Emerald Desert",
@@ -92,8 +92,8 @@ const Section3 = (props) => {
             sData4: "Duration",
         },
         {
-            title: `Tracks: <br class="hidden sm:block" /> Supercross  `,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block" /> with challenging terrain`,
+            title: `Tracks: <br class="hidden sm:block md:hidden lg:block" /> Supercross  `,
+            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block md:hidden lg:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block md:hidden lg:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block md:hidden lg:block" /> with challenging terrain`,
             background: "./../images/bgtrack 5.png",
             track: "./../images/track5.svg",
             trackTitle: "Emerald Desert",
@@ -109,7 +109,7 @@ const Section3 = (props) => {
         },
         {
             title: `Tracks: Canyon  `,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block" /> game's realistic tracks offer an authentic experience <br /> with challenging terrain`,
+            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block md:hidden lg:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block md:hidden lg:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block md:hidden lg:block" /> with challenging terrain`,
             background: "./../images/bgtrack6.png",
             track: "./../images/track 6.svg",
             trackTitle: "Emerald Desert",
@@ -137,7 +137,7 @@ const Section3 = (props) => {
                                     <img src={obj.background} className='absolute left-0 -bottom-[4vh] md:-bottom-[17vh] hminxl900:-bottom-[7vh] w-full h-full object-cover' alt="" />
 
                                     <div className="container h-full relative">
-                                        <div className="absolute left-[1rem] xl:left-0 bottom-[2rem]">
+                                        <div className="absolute left-[1rem] xl:left-0 bottom-[2rem] md:w-1/2 lg:w-auto">
                                             <h2 className='koulen text-white text__64 mb-2' dangerouslySetInnerHTML={{
                                                 __html: obj.title
                                             }}></h2>

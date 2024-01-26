@@ -84,12 +84,12 @@ const Navbar = (props) => {
                         </svg>
                     </div>
                     {
-                        props.status == true ? <a
+                        props.status == true ? <NavLink
                             to={"/"}
                             className={"pointer navbar-brand font__size--18 text__18-1024 normal "}
                         >
                             <LogoIcon width={"62px"} height={"52px"} />
-                        </a> : <a
+                        </NavLink> : <a
                             onClick={() => window.fullpage_api.moveTo(1)}
                             className={"pointer navbar-brand font__size--18 text__18-1024 normal "}
                         >

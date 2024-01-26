@@ -31,11 +31,20 @@ module.exports = {
       hminlg1200: { raw: "((min-height: 1200px) and (min-width: 1024px))" },
       
       hminmd1024: { raw: "((min-height: 1024px) and (min-width: 768px))" },
-
+      
       hminSm700: { raw: "((min-height: 700px) and (min-width: 576px))" },
       hminSm800: { raw: "((min-height: 800px) and (min-width: 576px))" },
-
+      hminSm700: { raw: "((min-height: 700px) and (min-width: 576px))" },
+      
+      hminlg700: { raw: "((min-height: 700px) and (min-width: 1024px))" },
       hminss800: { raw: "((min-height: 800px) and (min-width: 480px))" },
+      
+      hminmd700: { raw: "((min-height: 700px) and (min-width: 768px))" },
+      hminmd1000: { raw: "((min-height: 1000px) and (min-width: 768px))" },
+      hminmd900: { raw: "((min-height: 900px) and (min-width: 768px))" },
+      hminmd1000: { raw: "((min-height: 1000px) and (min-width: 768px))" },
+
+      hminxxs650: { raw: "((max-height: 650px) and (max-width: 375px))" },
 
       hminMaxSm: { raw: "(max-width: 576px)" },
       hminMaxSm600: { raw: "((min-height: 601px) and (max-width: 570px))" },
