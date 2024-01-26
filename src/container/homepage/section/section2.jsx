@@ -5,7 +5,7 @@ const section2 = (props) => {
         <Fragment>
             <img src="./../images/line 2.svg" className='absolute hidden md:block -right-[5rem] -bottom-[16rem] w-[94vh] hminxl800:w-[85vh] hminxl800:-right-[6rem] hminxl900:-right-[14rem] hminxl800:-bottom-[10rem] hminlg950:w-[79vh] hminlg950:-right-[24rem]' alt="" />
             <img src="./../images/line 1.svg" className='absolute -left-[7rem] sm:left-0 top-0 w-[221vh] max-w-[200%] sm:max-w-[100%] sm:w-auto h-full' alt="" />
-            <img src="./../images/layer 3.png" className='absolute md:-left-[12rem] lg:left-0 md:!bottom-0 h-full object-cover -bottom-[14rem] left-0 object-[23%] hminSm700:-bottom-[14rem] hminSm700:object-[23%] hminSm700:left-0 hminlg950:!object-[94%] hminlg1100:!object-[74%] hminmd1024:!object-[70%] hminmd700:object-[100%] hminmd700:-left-[3rem] hminmd1000:!object-[100%] hminmd1000:-left-[3rem]' alt="" />
+            <img src="./../images/layer 3.png" className='absolute md:-left-[12rem] lg:left-0 md:!bottom-0 h-full object-cover -bottom-[14rem] left-0 object-[23%] md:left-0 md:object-[100%] hminmd1000:object-[65%]' alt="" />
             <div className="absolute left-0 bottom-0 w-[72vh] -left-[1rem] xx:-left-[2rem] xx:w-[80vh] xs:left-0 sm:!w-[124vh] hminlg950:!w-[100vh] hminlg1100:!w-[95vh] hminmd1024:!w-[90vh] hminmd700:-left-[4rem]">
                 <div className="realtive w-full">
                     <img src="./../images/82e90ddf-27b2-48c1-826d-0787014f4e24 1.png" className='w-[100vh] lg:w-full' alt="" />
