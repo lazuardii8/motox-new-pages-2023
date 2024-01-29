@@ -222,7 +222,7 @@ const Mobile = (props) => {
                         }
                     }),
                 ]);
-                tl.duration(4).play()
+                tl.duration(2.5).play()
                 playing = false;
             }
         }
