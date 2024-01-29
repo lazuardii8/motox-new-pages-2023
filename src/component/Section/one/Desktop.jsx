@@ -236,7 +236,7 @@ const Desktop = (props) => {
                     }),
                 ]);
 
-                tl.duration(4.5).play()
+                tl.duration(2.5).play()
 
                 playing = false;
             }
