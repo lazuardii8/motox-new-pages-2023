@@ -9,7 +9,7 @@ const Section7 = (props) => {
 
             <div className="container relative h-full">
 
-                <h2 className='koulen text__95 text-white mb-[4rem] absolute top-[12vh] hminxxs650:top-[92px] text-center w-full md:hidden'>connect with us!</h2>
+                <h2 className='koulen text__95 text-white mb-[4rem] absolute left-1/2 -translate-x-1/2 top-[12vh] hminxxs650:top-[92px] text-center w-full md:hidden'>connect with us!</h2>
 
 
                 <div className="absolute md:hidden w-full left-1/2 -translate-x-1/2 hmaxMaxSm600:top-[46%] hminMaxSm600:top-[51%] hminMaxSm700:top-[50vh] hminMaxSm800:top-[56vh] hminMaxSm900:top-[60vh]">
