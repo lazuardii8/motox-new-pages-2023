@@ -4,6 +4,7 @@ import anime from 'animejs/lib/anime.es.js';
 import gsap from 'gsap';
 
 const Desktop = (props) => {
+    let mm = gsap.matchMedia();
     const videoLoad = useRef()
     let playing = true;
     useEffect(() => {
@@ -45,17 +46,43 @@ const Desktop = (props) => {
                 });
             }
         });
-
-        gsap.set(coverVideo, {
-            css: {
-                width: "100%",
-                height: "100%",
-                left: "0",
-                top: "50%",
-                yPercent: -50,
-            },
-            ease: "power1.inOut"
-        });
+        mm.add("(max-height: 899px) and (min-width:1025px)", () => {
+            gsap.set(coverVideo, {
+                css: {
+                    width: "100%",
+                    height: "100%",
+                    left: "0",
+                    top: "50%",
+                    yPercent: -50,
+                },
+                ease: "power1.inOut"
+            });
+        })
+        mm.add("(min-height: 900px) and (min-width:1025px)", () => {
+            gsap.set(coverVideo, {
+                css: {
+                    width: "100%",
+                    height: "100%",
+                    left: "0",
+                    top: "50%",
+                    yPercent: -50,
+                },
+                ease: "power1.inOut"
+            });
+        })
+        mm.add("(min-height: 900px) and (max-width:1024px)", () => {
+            gsap.set(coverVideo, {
+                css: {
+                    width: "100%",
+                    height: "100%",
+                    left: "50%",
+                    top: "50%",
+                    yPercent: -50,
+                    xPercent: -50,
+                },
+                ease: "power1.inOut"
+            });
+        })
         gsap.set(navbar, {
             css: {
                 top: "-100rem"
@@ -116,19 +143,52 @@ const Desktop = (props) => {
                     }),
                 ]);
 
-                tl.add([
-                    gsap.to(coverVideo, 1, {
-                        css: {
-                            width: "100%",
-                            height: "100%",
-                            left: "0",
-                            top: "50%",
-                            yPercent: -50,
-                        },
-                        ease: "power1.inOut",
-                        delay: 1.5,
-                    }),
-                ]);
+                mm.add("(max-height: 899px) and (min-width:1025px)", () => {
+                    tl.add([
+                        gsap.to(coverVideo, 1, {
+                            css: {
+                                width: "100%",
+                                height: "100%",
+                                left: "0",
+                                top: "50%",
+                                yPercent: -50,
+                            },
+                            ease: "power1.inOut",
+                            delay: 1.5,
+                        }),
+                    ]);
+                })
+                mm.add("(min-height: 900px) and (min-width:1025px)", () => {
+                    tl.add([
+                        gsap.to(coverVideo, 1, {
+                            css: {
+                                width: "100%",
+                                height: "100%",
+                                left: "0",
+                                top: "50%",
+                                yPercent: -50,
+                            },
+                            ease: "power1.inOut",
+                            delay: 1.5,
+                        }),
+                    ]);
+                })
+                mm.add("(min-height: 900px) and (max-width:1024px)", () => {
+                    tl.add([
+                        gsap.to(coverVideo, 1, {
+                            css: {
+                                width: "100%",
+                                height: "100%",
+                                left: "50%",
+                                top: "50%",
+                                yPercent: -50,
+                                xPercent: -50,
+                            },
+                            ease: "power1.inOut",
+                            delay: 1.5,
+                        }),
+                    ]);
+                })
                 tl.add([
                     gsap.to(coverVideo, 1, {
                         onComplete: function () {
@@ -268,7 +328,7 @@ const Desktop = (props) => {
                 ref={videoLoad}
                 data-keepplaying
                 // poster="./../images/Rectangle 22653.png"
-                className="coverVideo lazy absolute w-[52vw] h-[56vh] hminlg700:w-[61vw] hminxl700:w-[46rem] hminxl900:w-[51rem] top-[54%] object-cover -translate-y-1/2 left-[27%] hminxl700:left-[24%] hminxl700:left-[29%] transition-all duration-500 hminmd1024:w-[60vw]"
+                className="coverVideo lazy absolute w-[52vw] h-[56vh] hminlg700:w-[61vw] hminxl700:w-[46vw] hminxl900:w-[45vw] top-[54%] object-cover -translate-y-1/2 left-[27%] hminxl700:left-[24%] hminxl700:left-[29%] transition-all duration-500 hminmd1024:w-[60vw] hminmd10242500:w-[40vw] hminlgMd900:w-[90%] hminlgMd900:left-1/2 hminlgMd900:-translate-x-1/2 hminlgMd900:translate-y-0 hminlgMd900:top-[26%] hminlgMd900:h-[40vh]"
                 autoPlay
                 controls={false}
                 loop
@@ -287,18 +347,18 @@ const Desktop = (props) => {
                 Your browser does not support the video tag.
             </video>
             <div className="container relative z-[2] h-full hidden xsTop:block pointer-events-none">
-                <div className="character transition-all duration-500 absolute bottom-0 left-[6rem] hminlg700:left-[9rem] hminlg900:left-[4rem] lg:left-[13rem] hminlg850:left-[7rem] hminlg950:left-[3rem] hminlg1200:left-[2rem] hminmd1024:left-0 xsTop:left-[1rem]">
-                    <img src="./../images/pose 5.png" className="w-[59vh]" alt="" />
+                <div className="character transition-all duration-500 absolute bottom-0 left-[6rem] hminlg700:left-[9rem] hminlg900:left-[4rem] lg:left-[13rem] hminlg850:left-[7rem] hminlg950:left-[3rem] hminlg1200:left-[2rem] hminmd1024:left-0 xsTop:left-[1rem] hminlgMd900:left-1/2 hminlgMd900:-translate-x-1/2">
+                    <img src="./../images/pose 5.png" className="w-[59vh] hminlgMd900:w-[30vh]" alt="" />
                 </div>
                 {/* <img src="./../images/Rectangle 22580.svg" className="absolute left-0 top-0" alt="" /> */}
 
-                <img src="./../images/Group 706118.png" className="textMoto transition-all duration-500 absolute left-[2rem] hminlg900:left-[0] lg:left-[3rem] top-[27vh] w-[15vh] lg:w-auto hminlg950:left-[0.5rem] hminmd1024:w-[11vh] hminmd1024:top-[19vh] hminmd1024:left-[1rem] xsTop:w-[13vh] xsTop:top-[19vh] xsTop:left-[1rem]" alt="" />
+                <img src="./../images/Group 706118.png" className="textMoto transition-all duration-500 absolute left-[2rem] hminlg900:left-[0] lg:left-[3rem] top-[27vh] w-[15vh] lg:w-auto hminlg950:left-[0.5rem] hminmd1024:w-[11vh] hminmd1024:top-[19vh] hminmd1024:left-[1rem] xsTop:w-[13vh] xsTop:top-[19vh] xsTop:left-[1rem] hminlgMd900:hidden" alt="" />
 
 
                 <div className="wrapper__title-hero  transition-all duration-500 absolute right-[3rem] lg:right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] top-[18%] lg:top-[13%] hminlg700:top-[16%] hminxl900:top-[18%] text-center z-[10]">
                     <div className="text-right inline-block">
                         <h5 className="uppercase koulen text__48 text-white mb-2">WELCOME TO MOTOX</h5>
-                        <img src="./../images/RIDERS.svg" className="w-[55vh] lg:w-[66vh] hminlg700:w-[50vh] hminxl900:w-[50vh]" alt="" />
+                        <img src="./../images/RIDERS.svg" className="w-[55vh] lg:w-[66vh] hminlg700:w-[50vh] hminxl900:w-[50vh] hminlgMd900:w-[45vh]" alt="" />
                     </div>
                     <div className="flex items-center gap-3 mt-8">
                         <div className="relative inline-block">
@@ -320,7 +380,7 @@ const Desktop = (props) => {
                     </div>
                 </div>
 
-                <div className="wrapper__trailer transition-all duration-500 absolute z-[10] right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] bottom-[22vh] hminmd1024:right-[3rem] xsTop:right-[5rem]">
+                <div className="wrapper__trailer transition-all duration-500 absolute z-[10] right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] bottom-[22vh] hminmd1024:right-[3rem] xsTop:right-[5rem] hminlgMd900:right-[3rem] hminlgMd900:bottom-[40vh]  hminmd10242500:right-[7rem]">
                     <div className="flex items-center gap-3 pointer pointer-events-auto" onClick={props.toogleModal}>
                         <img src="./../images/Group 706149.svg" className="w-[60px]" alt="" />
                         <span className="koulen text__32 text-white">watch trailer</span>
@@ -331,7 +391,7 @@ const Desktop = (props) => {
             {/* <img src="./../images/jfsbkdfs.svg" className="lineLeft transition-all duration-500 absolute left-0 bottom-0 w-[120vh] z-[2] pointer-events-none hidden xsTop:block" alt="" /> */}
 
 
-            <div className="lineLeft transition-all duration-500 absolute left-0 bottom-0 w-[120vh] hminlg850:w-[100vh] z-[2] pointer-events-none hidden xsTop:block hminlg1100:w-[75vh] hminmd1024:w-[60vh] xsTop:w-[80vh]">
+            <div className="lineLeft transition-all duration-500 absolute left-0 bottom-0 w-[120vh] hminlg850:w-[100vh] z-[2] pointer-events-none hidden xsTop:block hminlg1100:w-[75vh] hminmd1024:w-[60vh] xsTop:w-[80vh] hminlgMd900:w-[50vh]">
                 <svg style={{ width: "100%", height: "100%" }} viewBox="0 0 981 458" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_b_119_1732)">
                         <path className='s1-pt-1' d="M566 181.5L661.5 277H799.5L981 458.5H139L0 319.5V16H54.5L220 181.5H566Z" fill="white" fillOpacity="0.05" />
