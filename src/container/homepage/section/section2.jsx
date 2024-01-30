@@ -16,14 +16,14 @@ const section2 = (props) => {
                 <div className="absolute md:right-0 top-[14vh] pr-0 md:!pr-[1rem] xl:!pr-0">
                     <h5 className='text__20 uppercase text-[#F43329] mb-2'>START YOUR JOURNEY </h5>
                     <h2 className='koulen text-white text__64 mb-2'>step into the track</h2>
-                    <p className='text__20 text-white opacity-70'>Something about VR motocross game, step into the arena, step  <br className='sm:block hidden' />into the track, career mode</p>
+                    <p className='text__20 text-white opacity-70'>The Ultimate VR Motocross Simulator. Grab your virtual dirt <br className='sm:block hidden' /> bike handlebars & Race against others online, throw insane <br className='sm:block hidden' /> freestyle tricks, & become a champion in career mode!</p>
                     <div className="flex items-center gap-3 mt-4 ml-[1rem]">
                         <div className="flex items-center">
                             <div className="w-[271px] h-[48px] xs:h-[64px] -mr-[14rem] bg-shadow-btn skew-x-[40deg] rotate-[180deg]"></div>
                             <a href="https://www.meta.com/experiences/5754014731339882/" target='_blank' className="inline-block flex-shrink-0 relative z-2 text-white koulen text__32 uppercase px-[30px] xx:px-[36px] ss:px-[52px] h-[48px] xs:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden">
                                 <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                 <span className="-skew-x-[40deg] relative z-[2]">
-                                    join BETA
+                                    Download Now
                                 </span>
                             </a>
                         </div>

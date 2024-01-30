@@ -29,7 +29,7 @@ const Section3 = (props) => {
     const dataTracks = [
         {
             title: `Tracks: Dead <br class="hidden sm:block md:hidden lg:block" /> Forest`,
-            desc: `Get ready to tear through lifelike tracks that mirror the <br class="hidden sm:block md:hidden lg:block" /> heart-pounding excitement of real motocross racing. Our <br class="hidden sm:block md:hidden lg:block" /> game's realistic tracks offer an authentic experience <br class="hidden sm:block md:hidden lg:block" /> with challenging terrain`,
+            desc: `Get ready to tear through a forest of dead trees with gameplay that mirrors <br class="hidden sm:block md:hidden lg:block" /> the heart-pounding excitement of real motocross racing! Accelerate, Turn,<br class="hidden sm:block md:hidden lg:block" /> Lean, and land jumps cleanly to win against others online!`,
             background: "./../images/sec 3 - layer 2.png",
             track: "./../images/map - 1.svg",
             trackTitle: "Dead Forest",
