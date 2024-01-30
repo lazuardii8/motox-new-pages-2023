@@ -46,7 +46,7 @@ const Desktop = (props) => {
                 });
             }
         });
-        mm.add("(max-height: 799px) and (min-width:1200px)", () => {
+        mm.add("(max-height: 799px) and (min-width:1025px)", () => {
             gsap.set(coverVideo, {
                 css: {
                     width: "100%",
@@ -58,7 +58,7 @@ const Desktop = (props) => {
                 ease: "power1.inOut"
             });
         })
-        mm.add("(min-height: 800px) and (min-width:1200px)", () => {
+        mm.add("(min-height: 800px) and (min-width:1025px)", () => {
             gsap.set(coverVideo, {
                 css: {
                     width: "100%",
@@ -70,7 +70,7 @@ const Desktop = (props) => {
                 ease: "power1.inOut"
             });
         })
-        mm.add("(min-height: 800px) and (max-width:1199px)", () => {
+        mm.add("(min-height: 800px) and (max-width:1024px)", () => {
             gsap.set(coverVideo, {
                 css: {
                     width: "100%",
@@ -143,7 +143,7 @@ const Desktop = (props) => {
                     }),
                 ]);
 
-                mm.add("(max-height: 799px) and (min-width:1200px)", () => {
+                mm.add("(max-height: 799px) and (min-width:1025px)", () => {
                     tl.add([
                         gsap.to(coverVideo, 1, {
                             css: {
@@ -158,7 +158,7 @@ const Desktop = (props) => {
                         }),
                     ]);
                 })
-                mm.add("(min-height: 800px) and (min-width:1200px)", () => {
+                mm.add("(min-height: 800px) and (min-width:1025px)", () => {
                     tl.add([
                         gsap.to(coverVideo, 1, {
                             css: {
@@ -173,7 +173,7 @@ const Desktop = (props) => {
                         }),
                     ]);
                 })
-                mm.add("(min-height: 800px) and (max-width:1199px)", () => {
+                mm.add("(min-height: 800px) and (max-width:1024px)", () => {
                     tl.add([
                         gsap.to(coverVideo, 1, {
                             css: {
