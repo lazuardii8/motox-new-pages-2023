@@ -6,7 +6,6 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      hminmd1024: { raw: "((min-height: 1024px) and (min-width: 768px))" },
       xsTop: "576px",
       ...defaultTheme.screens,
       hminlg700: { raw: "((min-height: 700px) and (min-width: 1024px))" },
@@ -31,7 +30,7 @@ module.exports = {
       hminlg1100: { raw: "((min-height: 1100px) and (min-width: 1024px))" },
       hminlg1200: { raw: "((min-height: 1200px) and (min-width: 1024px))" },
       
-      
+      hminmd1024: { raw: "((min-height: 1024px) and (min-width: 768px))" },
       hminmd10242200: { raw: "((min-height: 1024px) and (min-width: 2200px))" },
       
       hminSm700: { raw: "((min-height: 700px) and (min-width: 576px))" },
