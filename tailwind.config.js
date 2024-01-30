@@ -47,7 +47,7 @@ module.exports = {
 
       hminxxs650: { raw: "((max-height: 650px) and (max-width: 375px))" },
 
-      hminlgMd900: { raw: "((min-height: 800px) and (max-width: 1024px))" },
+      hminlgMd900: { raw: "(min-height: 800px) and (max-width: 1024px)" },
       hminmd10242500: { raw: "((min-height: 1000px) and (min-width: 2500px))" },
 
       hminMaxSm: { raw: "(max-width: 576px)" },

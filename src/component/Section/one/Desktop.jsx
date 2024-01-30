@@ -380,7 +380,7 @@ const Desktop = (props) => {
                     </div>
                 </div>
 
-                <div className="wrapper__trailer transition-all duration-500 absolute z-[10] right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] bottom-[22vh] hminmd1024:right-[3rem] xsTop:right-[5rem] hminlgMd900:right-[3rem] hminlgMd900:bottom-[40vh]  hminmd10242500:right-[7rem]">
+                <div className="wrapper__trailer transition-all duration-500 absolute z-[10] right-[9rem] hminlg700:right-[3rem] hminxl900:right-[5rem] bottom-[22vh] hminmd1024:right-[3rem] xsTop:right-[5rem] hminlgMd900:right-[3rem] hminlgMd900:bottom-[40vh] hminmd10242500:right-[7rem]">
                     <div className="flex items-center gap-3 pointer pointer-events-auto" onClick={props.toogleModal}>
                         <img src="./../images/Group 706149.svg" className="w-[60px]" alt="" />
                         <span className="koulen text__32 text-white">watch trailer</span>
