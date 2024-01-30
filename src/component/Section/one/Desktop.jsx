@@ -46,7 +46,7 @@ const Desktop = (props) => {
                 });
             }
         });
-        mm.add("(max-height: 899px) and (min-width:1025px)", () => {
+        mm.add("(max-height: 799px) and (min-width:1025px)", () => {
             gsap.set(coverVideo, {
                 css: {
                     width: "100%",
@@ -58,7 +58,7 @@ const Desktop = (props) => {
                 ease: "power1.inOut"
             });
         })
-        mm.add("(min-height: 900px) and (min-width:1025px)", () => {
+        mm.add("(min-height: 800px) and (min-width:1025px)", () => {
             gsap.set(coverVideo, {
                 css: {
                     width: "100%",
@@ -70,7 +70,7 @@ const Desktop = (props) => {
                 ease: "power1.inOut"
             });
         })
-        mm.add("(min-height: 900px) and (max-width:1024px)", () => {
+        mm.add("(min-height: 800px) and (max-width:1024px)", () => {
             gsap.set(coverVideo, {
                 css: {
                     width: "100%",
@@ -143,7 +143,7 @@ const Desktop = (props) => {
                     }),
                 ]);
 
-                mm.add("(max-height: 899px) and (min-width:1025px)", () => {
+                mm.add("(max-height: 799px) and (min-width:1025px)", () => {
                     tl.add([
                         gsap.to(coverVideo, 1, {
                             css: {
@@ -158,7 +158,7 @@ const Desktop = (props) => {
                         }),
                     ]);
                 })
-                mm.add("(min-height: 900px) and (min-width:1025px)", () => {
+                mm.add("(min-height: 800px) and (min-width:1025px)", () => {
                     tl.add([
                         gsap.to(coverVideo, 1, {
                             css: {
@@ -173,7 +173,7 @@ const Desktop = (props) => {
                         }),
                     ]);
                 })
-                mm.add("(min-height: 900px) and (max-width:1024px)", () => {
+                mm.add("(min-height: 800px) and (max-width:1024px)", () => {
                     tl.add([
                         gsap.to(coverVideo, 1, {
                             css: {
@@ -366,7 +366,7 @@ const Desktop = (props) => {
                             <a href="https://www.meta.com/experiences/5754014731339882/" target='_blank' className="inline-block relative z-2 text-white koulen text__32 uppercase px-[36px] lg:px-[52px] h-[50px] lg:h-[64px] flex items-center justify-center bg-[#D21F33] border-[3px] border-solid !border-white skew-x-[40deg] relative overflow-hidden pointer-events-auto">
                                 <img src="./../images/path24.png" className="absolute right-0 top-0" alt="" />
                                 <span className="-skew-x-[40deg] relative z-[2]">
-                                    join BETA
+                                    Download Now
                                 </span>
                             </a>
                         </div>
